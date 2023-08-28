@@ -1,3 +1,15 @@
-.index-title {
-  font-size: 100px;
+.banner{
+	background-image: url(../images/img_banner.png);
+	background-size: cover;
+	background-position: center center;
+  height: 2000px;
+}
+
+.indexTitle{
+  padding-top: 273px;
+  color: #ffffff;
+  font-size: 120px;
+  line-height: 1.2;
+  font-family:'Anton', 'Microsoft JhengHei',sans-serif;
+  margin-bottom:0.75rem ;
 }
