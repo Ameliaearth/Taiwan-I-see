@@ -1,4 +1,82 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  background: #333333;
+}
+
+.footerContent{
+  width: 40%;
+}
+
+.footerTitle{
+  font-size: 1.125rem;
+  line-height: 1.2;
+  color: #E9E9E9;
+}
+
+.footerText{
+  font-size: 0.875rem;
+  line-height: 1.2;
+  color: #E9E9E9;
+}
+
+.footerContentbtn{
+  text-decoration: none;
+  width: 307px;
+}
+
+.footerContentbtnImg{
+  background-image: url('../images/Line.png');
+  width: 100px;
+  height: 1px;
+}
+
+.btnUnder{
+  background-color: $primary;
+  width: 130px;
+  height: 43px;
+  border-radius: 100px;
+}
+
+.footerContentbtn:hover{
+  opacity: 1;
+
+  .btnUnder{
+    background-color: $primary;
+    width: 307px;
+    height: 43px;
+    border-radius: 100px;
+  }
+
+}
+
+
+.btnAbove{ 
+  position: absolute;
+  top:50%;
+  transform:translate(24px,-50%);
+}
+
+.footerMenu{
+
+  ul{
+    width: 90%;
+    list-style: none;
+  }
+
+  a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.2;
+  }
+
+  a:hover{
+    color: #ffffff;
+    opacity: 0.7;
+  }
+
+  span{
+    font-size: 0.875rem;
+    line-height: 1.2;
+    color: #B4875E;
+  }
 }

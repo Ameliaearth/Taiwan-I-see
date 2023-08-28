@@ -1,4 +1,41 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.searchArea{
+  background:rgba(0,0,0,0);
+  border:none;
+  color:white;
+  outline: none;
+}
+
+.borderBtm{
+  width: 160px;
+  border-bottom: 1px solid white;
+}
+
+.navbar {
+  background-color: #333333;
+}
+
+.navbar a{
+  color:#ffffff;
+
+}
+
+.nav-item a:hover{
+  color:#FFFFFF;
+}
+
+
+.borderPill{
+  width: 113px;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+}
+
+.borderPill:hover{
+  opacity: 1;
+  background-color: $primary;
+  border: 1px solid $primary;
+}
+
+.borderPill a:hover{
+  opacity: 1;
 }
