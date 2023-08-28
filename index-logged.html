@@ -5,18 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <!-- font Anton&Inter CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- bootstrap reset CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script type="module" crossorigin src="/Taiwan-I-see/assets/main-c3b3b542.js"></script>
-    <link rel="stylesheet" href="/Taiwan-I-see/assets/main-a417fa9e.css">
+    <script type="module" crossorigin src="/Taiwan-I-see/assets/main-8bb82696.js"></script>
+    <link rel="stylesheet" href="/Taiwan-I-see/assets/main-d33a686d.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg py-4  ">
+    
+
+    <div class="banner">
+      <!-- header不一樣 -->
+      <nav class="navbar navbar-expand-lg py-4">
 
     <div class="container d-flex align-items-start">
         <div>
             <a class="navbar-brand" href="#"><img src="data:image/png;base64,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" alt="logo" width="94" height="140"></a>
         </div>
+
+         <!-- 切換用，開發完成後刪掉 -->
+        <ul>
+          <li><a href="index.html">回到未登入頁面</a></li>
+          <li><a href="index-logged.html">到已登入頁面</a></li>
+        </ul>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -61,30 +76,51 @@
 
     </div>
   </nav>
-    <div class="container">
-      <h1 class="index-title">我是已登入首頁</h1>
-      <ul>
-        <li><a href="index.html">回到未登入頁面</a></li>
-        <li><a href="index-logged.html">到已登入頁面</a></li>
-      </ul>
+      
+      <div class="container">
+        <h1 class="indexTitle">Taiwan, I see.</h1>       
+
+        <!-- 此連結要到7-1 -->
+        <a href="#" class="footerContentbtn mx-auto ms-lg-0">
+
+            <div class="position-relative">
+                <div class="btnUnder"></div>
+
+                <div class="d-flex align-items-center btnAbove ">
+                    <span style="color: white;letter-spacing: 4px;">開始我的景點之旅</span>
+                    <div class="footerContentbtnImg ms-2"></div>
+                </div>
+                
+            </div>
+            
+        </a>
+
+
+        
+      </div>
+
+
+
+
     </div>
 
 
 
 
 
+
     <div class="footer py-5">
-    <div class="container d-flex">
-        <div>
+    <div class="container d-lg-flex ">
+        <div class="footerLogo" >
             <a href="#"><img src="data:image/png;base64,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" alt="footer_logo"></a>
         </div>
     
-        <div class="footerContent ms-3 d-flex flex-column justify-content-center">
+        <div class="footerContent ms-lg-3 d-flex flex-column justify-content-center">
             <p class="footerTitle">每個文化景點都會有個詳細的背景故事</p>
             <p class="footerText">本網站致力於發掘與檢索台灣每個景點最深層的在地文化透過使用者們相互分享與回饋，找到彼此最有感的連結打造台灣人心中具深度的旅遊方式尋找深刻的景點。</p>
 
             <!-- 此連結要到7-1 -->
-            <a href="#" class="footerContentbtn ">
+            <a href="#" class="footerContentbtn mx-auto ms-lg-0">
 
                 <div class="position-relative">
                     <div class="btnUnder"></div>
@@ -97,10 +133,11 @@
                 </div>
                 
             </a>
+            
         </div>
 
-        <div class="footerMenu d-flex flex-column ms-auto mt-auto align-items-end">
-            <ul class="d-flex justify-content-between">
+        <div class="footerMenu d-flex flex-column ">
+            <ul>
                 <li><a href="#">關於我們</a></li>
                 <li><a href="#">聯絡我們</a></li>
                 <li><a href="#">隱私權保護政策</a></li>
