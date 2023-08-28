@@ -5,19 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <!-- font Anton&Inter CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- bootstrap reset CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   </head>
 
   <body>
-    <%- include('./layout/header-logged'); -%>
+    
 
-    <div class="container">
-      <h1 class="index-title">我是已登入首頁</h1>
-      <ul>
-        <li><a href="index.html">回到未登入頁面</a></li>
-        <li><a href="index-logged.html">到已登入頁面</a></li>
-      </ul>
+    <div class="banner">
+      <!-- header不一樣 -->
+      <%- include('./layout/index_header-logged'); -%>
+
+      
+      <div class="container">
+        <h1 class="indexTitle">Taiwan, I see.</h1>       
+
+        <!-- 此連結要到7-1 -->
+        <a href="#" class="footerContentbtn mx-auto ms-lg-0">
+
+            <div class="position-relative">
+                <div class="btnUnder"></div>
+
+                <div class="d-flex align-items-center btnAbove ">
+                    <span style="color: white;letter-spacing: 4px;">開始我的景點之旅</span>
+                    <div class="footerContentbtnImg ms-2"></div>
+                </div>
+                
+            </div>
+            
+        </a>
+
+
+        
+      </div>
+
+
+
+
     </div>
+
 
 
 
