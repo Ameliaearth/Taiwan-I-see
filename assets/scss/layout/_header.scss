@@ -16,15 +16,13 @@
 
 .navbar a{
   color:#ffffff;
+
 }
 
 .nav-item a:hover{
   color:#FFFFFF;
 }
 
-.nav-item:hover,.navbar-brand:hover{
-  opacity:0.7;
-}
 
 .borderPill{
   width: 113px;
@@ -36,4 +34,8 @@
   opacity: 1;
   background-color: $primary;
   border: 1px solid $primary;
+}
+
+.borderPill a:hover{
+  opacity: 1;
 }
