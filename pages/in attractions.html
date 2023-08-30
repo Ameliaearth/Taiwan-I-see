@@ -18,59 +18,65 @@
 <body>
 <%- include('./layout/header-logged'); -%>
 
-<div class="container my-4">
+<div class="container my-5">
 
     <!--內容介紹-->
-    <div class="row">
-        <div>
-            <img class="img-thumbnail" src="../assets/images/賽夏族矮靈祭-1.jpg" alt="賽夏族矮靈祭-1">
-            <img class="img-thumbnail" src="../assets/images/賽夏族矮靈祭-2.jpg" alt="賽夏族矮靈祭-2">
+    <div class="row mb-4">
+        <div class="col-10">
+            <img class="shadow img-thumbnail img-fluid rounded me-1" src="../assets/images/故宮博物院-1.jpg" width="500" height="600" alt="故宮博物院-1">
+            <img class="shadow img-thumbnail img-fluid rounded" src="../assets/images/故宮博物院-2.jpg" width="500" height="600" alt="故宮博物院-2">
         </div>
-        <h3>賽夏族矮靈祭</h3>
-        <div class="mb-2 me-1">
-            <a class="text-decoration-none rounded-pill bg-secondary text-white fs-14 py-1 p-12 me-2" href="#"># 賽夏族 </a>
-            <a class="text-decoration-none rounded-pill bg-secondary text-white fs-14 py-1 p-12" href="#"># 矮靈祭</a>
+        <div class="col-2">
+            <h3 class="fw-bold">故宮博物院</h3>
+            <div>
+                <a class="text-decoration-none rounded-pill bg-secondary text-white fs-14 py-1 p-12 me-2" href="#"># 故宮 </a>
+                <a class="text-decoration-none rounded-pill bg-secondary text-white fs-14 py-1 p-12" href="#"># 博物院</a>
+            </div>
         </div>
     </div>
     <ul class="row list-unstyled d-flex justify-content-evenly">
-        <li class="col-md-2">
-            <a href="#">
+        <li class="col-md-2 rounded-pill bg-success text-center py-1 op-7 list-4">
+            <a class="text-white text-decoration-none" href="#">
                 <span class="align-top material-symbols-outlined">heart_plus </span>
                 加入收藏</a>
         </li>
-        <li class="col-md-2">
-            <a href="#">
+        <li class="col-md-2 rounded-pill bg-success text-center py-1 op-7 list-4">
+            <a class="text-white text-decoration-none" href="#">
                 <span class="align-top material-symbols-outlined">explore </span>
                 加入我的景點之旅</a>
         </li>
-        <li class="col-md-2">
-            <a href="#"><!--要連結留言區頁面-->
+        <li class="col-md-2 rounded-pill bg-success text-center py-1 op-7 list-4">
+            <a class="text-white text-decoration-none" href="#"><!--要連結留言區頁面-->
                 <span class="align-top material-symbols-outlined">mark_unread_chat_alt </span>
                     進入留言區</a>
         </li>
-        <li class="col-md-2">
-            <a href="hot attractions.html">
+        <li class="col-md-2 rounded-pill bg-success text-center py-1 op-7 list-4">
+            <a class="text-white text-decoration-none" href="hot attractions.html">
                 <span class="align-top material-symbols-outlined">distance </span>
                     附近熱門景點</a>
         </li>
-        <li class="col-md-2">
-            <a href="#">
+        <li class="col-md-2 rounded-pill bg-success text-center py-1 op-7 list-4">
+            <a class="text-white text-decoration-none" href="#">
                 <span class="align-top material-symbols-outlined">travel_explore </span>
                 加入自訂行程</a>
         </li>
     </ul>
 
     <div class="row">
-        <div class="col-12 border border-dark border-2 py-4 px-4 my-4">
+        <div class="shadow col-12 border border-light border-2 py-4 px-4 my-4">
             <p>
-                賽夏族的族稱為「Saysiyat」，主要分佈於新竹縣五峰鄉五指山麓和苗栗縣南庄、獅潭兩鄉丘陵地。賽夏族可以進一步分成北賽夏群與南賽夏群，
-                前者主要分佈於新竹縣五峰鄉境內，與泰雅族混居，人口大多集中在今大隘村，少數居住在花園村比來部落；後者則分佈於苗栗縣南庄鄉東河村、
-                蓬萊村、獅潭鄉百壽村，並與泰雅族、客家人混居。
+                國立故宮博物院位於台北市士林區至善路二段、外雙溪地區，於西元1965年10月25日興建完工，中國宮殿式的建築，一、二、三層為展覽陳列空間，
+                四樓為休憩茶座「三希堂」，藏有全世界最多的無價中華藝術寶藏，收藏品主要承襲自宋、元、明、清四朝，幾乎涵蓋了整部五千年的中國歷史，
+                數量達65萬5千多件，國立故宮博物院擁有「中華文化寶庫」的美名；國立故宮博物院除了展覽品豐富以外，
+                提供中、英、法、德、日、西、韓等七國語言專業導覽，並定期舉辦各類文物研習課程、專題演講及巡迴展出活動，出版130種以上的刊物及專輯，
+                實為世界的文化寶地，國立故宮博物院是來台灣旅遊的必訪之地。
             </p>
-            <p>「矮靈祭」是賽夏族最重要的一項傳統祭典，2年一小祭，10年一大祭，約在農曆10月15日左右農作物收成之後舉行，為期4天3夜。整個矮靈祭分為告靈
-                、迎靈、會靈、娛靈、送靈等幾個主要儀式，其中尤以迎靈最為神聖，只容本族參與（一般遊客只能參加會靈及娛靈兩種儀式）。
-            第一天展開的「迎靈」，由長老們供奉酒肉，向東方召請矮靈，以祈求降臨；第二天「娛靈」，是整個矮靈祭中的重頭戲，族人以熱鬧的歌舞來紀念矮靈；
-            最後一天「送靈」，等待破曉時分，族人將芒草結和榛樹枝朝東邊拋去，以表示將矮靈送走，並將供奉的糯米酒、豬肉及米糕等分送給參與祭典之人。
+            <p>
+                在國立故宮博物院典藏為數近70萬件文物與藝術作品，大部分是原先國立北平故宮博物院、國立中央博物院籌備處和國立北平圖書館等機構所藏來自紫禁城、
+                盛京行宮、避暑山莊、頤和園、靜宜園和國子監等處皇家舊藏；另有部分是編列預算購置，接收自第二次世界大戰結束日本歸還部分文物，
+                以及透過各界捐贈和徵集而來。藏品時間跨度涵蓋新石器時代至今長達8,000年，各類藏品分別交由器物處、書畫文獻處和南院處等3個策展部門管理，
+                當中以長篇銘文的青銅器、古代早期的名家書畫、善本古籍和官窯瓷器等蒐藏最具影響力。
+                展廳內是按照文物類別以編年方式系統性地陳設7,000件展品，器物類展件相隔半年至2年輪換一次，書畫和圖書文獻類展件為每3個月定期更換。
             </p>
         </div>
     </div>
@@ -78,11 +84,12 @@
     <div class="row">
         <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29020.79709723359!2d121.0457461392514!3d24.60300964241428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z6LO95aSP5peP55-u6Z2I56Wt!5e0!3m2!1szh-TW!2stw!4v1693381296377!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+
     <!--附近熱門景點-->
     <div class="mt-5">
         <div class="d-flex align-items-center">
             <h2 class="text-success fw-bold py-3 me-3">附近熱門景點</h2>
-            <button type="button" class="btn btn-outline-success">更多熱門景點</button>
+            <a class="btn btn-outline-success" href="hot attractions.html">更多熱門景點</a>
         </div>
         <div class="row">
             <div class="col-md-4 px-3">
