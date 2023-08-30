@@ -13,3 +13,120 @@
   font-family:'Anton', 'Microsoft JhengHei',sans-serif;
   margin-bottom:0.75rem ;
 }
+
+.monthPromotionbg{
+  opacity: 90%;
+  border-radius: 24px 0px 0px 24px;
+  width: 65%;
+  margin-top: 60px;
+}
+
+.monthTag{
+  width: 170px;
+  height: 48px;
+  margin-top: 40px;
+  padding: 8px 24px 8px 12px;
+  border-radius:0px 24px 24px 0px ;
+}
+
+.monthPromotion{
+  padding: 32px 48px 48px 48px;
+}
+
+.monthContent{
+  width: 421px;
+}
+
+.mb-12{
+  margin-bottom: 12px;
+}
+
+.mb-40{
+  margin-bottom: 40px;
+}
+
+.mt-32{
+  margin-top: 32px;
+}
+
+.chooseType{
+  padding-top: 160px;
+  padding-bottom: 64px;
+}
+
+// 北部
+.chooseNorth{
+  width: 100%;
+  height: 100px;
+  border:1px dashed #ffffff;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-radius:24px 24px 0px 0px ;
+}
+.chooseNorth:hover{
+  background-image: url('../images/img_boxs_01.png');
+  background-size: cover;
+  background-position: center -110px;
+}
+
+.w66{
+  width: 66.6%;
+}
+
+// 離島
+.chooseIsland{
+  width: 50%;
+  height: 100px;
+  border:1px dashed #ffffff;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.chooseIsland:hover{
+  background-image: url('../images/img_boxs_02.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+// 中部
+.chooseMiddle{
+  width: 50%;
+  height: 100px;
+  border:1px dashed #ffffff;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.chooseMiddle:hover{
+  background-image: url('../images/img_boxs_03.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+// 南部
+.chooseSouth{
+  width: 100%;
+  height: 100px;
+  border:1px dashed #ffffff;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-radius:0px 0px 0px 24px ;
+}
+.chooseSouth:hover{
+  background-image: url('../images/img_boxs_05.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+// 東部
+.chooseEast{
+  width: 33.4%;
+  height: 200px;
+  border:1px dashed #ffffff;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-radius:0px 0px 24px 0px ;
+}
+.chooseEast:hover{
+  background-image: url('../images/img_boxs_04.png');
+  background-size: cover;
+  background-position: center center;
+}
