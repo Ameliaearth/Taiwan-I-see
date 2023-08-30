@@ -16,46 +16,7 @@
 </head>
 
 <body>
-
-<nav class="navbar navbar-expand-lg py-4" style="background-color: #333333;">
-    <div class="container d-flex align-items-start">
-        <div>
-            <a class="navbar-brand" href="#"><img src="../assets/images/logo＿index.png" alt="logo" width="94" height="140"></a>
-        </div>
-            <!-- 切換用，開發完成後刪掉 -->
-        <ul>
-            <li><a href="index.html">回到未登入頁面</a></li>
-            <li><a href="index-logged.html">到已登入頁面</a></li>
-            <li><a href="attractions.html">2-1頁面</a></li>
-        </ul>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item d-flex borderBtm">
-                    <a class="nav-link" href="#"><img src="../assets/images/icon_search.png" alt=""></a>
-                    <input class="searchArea " type="text" placeholder="找景點" aria-label="search">
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">景點內容</a><!-- 連8-2 -->
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="collect.html">我的收藏</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="record.html">歷史觀看紀錄</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="../assets/images/icon_person.png" alt="">您好，王小明</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">登出</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<%- include('./layout/header-logged'); -%>
 
 <!-- nav -->
 <div class="container my-4">
@@ -143,16 +104,20 @@
     <div class="row">
         <div class="col-md-4 px-3">
             <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a href="#"><img class="bor-rad-24 mx-auto d-block" src="../assets/images/梧棲夜市-1.jpeg" width="360" height="260" alt="梧棲夜市-1"></a><!-- 連至8-2 -->
+                <a href="in attractions.html">
+                    <img class="bor-rad-24 mx-auto d-block" src="../assets/images/梧棲夜市-1.jpeg" width="360" height="260" alt="梧棲夜市-1">
+                </a>
                 <h5 class="text-center fw-bold py-3 text-success">梧棲夜市</h5>
                 <ul class="list-unstyled">
                     <li class="mb-2">
-                        <span class="text-warning material-symbols-outlined">explore</span>
-                        <a class="align-top text-muted text-decoration-none" href="#">加入我的景點之旅</a>
+                        <a class="text-muted text-decoration-none" href="#">
+                            <span class="align-top text-warning material-symbols-outlined">explore</span>
+                            加入我的景點之旅</a>
                     </li>
                     <li class="mb-2">
-                        <span class="text-warning material-symbols-outlined">travel_explore</span>
-                        <a class="align-top text-muted text-decoration-none" href="#">加入自訂行程</a>
+                        <a class="text-muted text-decoration-none" href="#">
+                            <span class="align-top text-warning material-symbols-outlined">travel_explore</span>
+                            加入自訂行程</a>
                     </li>
                     <li class="mb-2 me-1">
                         <a class="text-decoration-none rounded-pill bg-secondary text-white fs-14 py-1 p-12 me-2" href="#"># 梧棲夜市 </a>
@@ -160,7 +125,7 @@
                     </li>
                 </ul>
                 <ul class="list-unstyled d-flex justify-content-between align-items-center">
-                    <%- include('./layout/browse'); -%><!-- 連至8-2 -->
+                    <%- include('./layout/browse'); -%>
                     <li>
                         <a class="text-dark text-decoration-none" href="#">7000人收藏 
                             <span class="align-top text-danger material-symbols-outlined">heart_plus</span>
@@ -173,16 +138,20 @@
 
         <div class="col-md-4 px-3">
             <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a href="#"><img class="bor-rad-24 mx-auto d-block" src="../assets/images/廣盛老街-1.jpeg" width="360" height="260" alt="廣盛老街-1"></a><!-- 連至8-2 -->
+                <a href="in attractions.html">
+                    <img class="bor-rad-24 mx-auto d-block" src="../assets/images/廣盛老街-1.jpeg" width="360" height="260" alt="廣盛老街-1">
+                </a>
                 <h5 class="text-center fw-bold py-3 text-success">廣盛老街</h5>
                 <ul class="list-unstyled">
                     <li class="mb-2">
-                        <span class="text-warning material-symbols-outlined">explore</span>
-                        <a class="align-top text-muted text-decoration-none" href="#">加入我的景點之旅</a>
+                        <a class="text-muted text-decoration-none" href="#">
+                            <span class="align-top text-warning material-symbols-outlined">explore</span>
+                            加入我的景點之旅</a>
                     </li>
                     <li class="mb-2">
-                        <span class="text-warning material-symbols-outlined">travel_explore</span>
-                        <a class="align-top text-muted text-decoration-none" href="#">加入自訂行程</a>
+                        <a class="text-muted text-decoration-none" href="#">
+                            <span class="align-top text-warning material-symbols-outlined">travel_explore</span>
+                            加入自訂行程</a>
                     </li>
                     <li class="mb-2 me-1">
                         <a class="text-decoration-none rounded-pill bg-secondary text-white fs-14 py-1 p-12 me-2" href="#"># 廣盛老街 </a>
@@ -190,7 +159,7 @@
                     </li>
                 </ul>
                 <ul class="list-unstyled d-flex justify-content-between align-items-center">
-                    <%- include('./layout/browse'); -%><!-- 連至8-2 -->
+                    <%- include('./layout/browse'); -%>
                     <li>
                         <a class="text-dark text-decoration-none" href="#">6666人收藏 
                             <span class="align-top text-danger material-symbols-outlined">heart_plus</span>
@@ -203,16 +172,20 @@
 
         <div class="col-md-4 px-3">
             <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a href="#"><img class="bor-rad-24 mx-auto d-block" src="../assets/images/路思義教堂-3.jpeg" width="360" height="260" alt="路思義教堂-3"></a><!-- 連至8-2 -->
+                <a href="in attractions.html">
+                    <img class="bor-rad-24 mx-auto d-block" src="../assets/images/路思義教堂-3.jpeg" width="360" height="260" alt="路思義教堂-3">
+                </a>
                 <h5 class="text-center fw-bold py-3 text-success">路思義教堂</h5>
                 <ul class="list-unstyled">
                     <li class="mb-2">
-                        <span class="text-warning material-symbols-outlined">explore</span>
-                        <a class="align-top text-muted text-decoration-none" href="#">加入我的景點之旅</a>
+                        <a class="text-muted text-decoration-none" href="#">
+                            <span class="align-top text-warning material-symbols-outlined">explore</span>
+                            加入我的景點之旅</a>
                     </li>
                     <li class="mb-2">
-                        <span class="text-warning material-symbols-outlined">travel_explore</span>
-                        <a class="align-top text-muted text-decoration-none" href="#">加入自訂行程</a>
+                        <a class="text-muted text-decoration-none" href="#">
+                            <span class="align-top text-warning material-symbols-outlined">travel_explore</span>
+                            加入自訂行程</a>
                     </li>
                     <li class="mb-2 me-1">
                         <a class="text-decoration-none rounded-pill bg-secondary text-white fs-14 py-1 p-12 me-2" href="#"># 路思義教堂 </a>
@@ -220,7 +193,7 @@
                     </li>
                 </ul>
                 <ul class="list-unstyled d-flex justify-content-between align-items-center">
-                    <%- include('./layout/browse'); -%><!-- 連至8-2 -->
+                    <%- include('./layout/browse'); -%>
                     <li>
                         <a class="text-dark text-decoration-none" href="#">8888人收藏 
                             <span class="align-top text-danger material-symbols-outlined">heart_plus</span>
@@ -233,16 +206,20 @@
 
         <div class="col-md-4 px-3">
             <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a href="#"><img class="bor-rad-24 mx-auto d-block" src="../assets/images/車埕木業展示館-1.jpeg" width="360" height="260" alt="車埕木業展示館-1"></a><!-- 連至8-2 -->
+                <a href="in attractions.html">
+                    <img class="bor-rad-24 mx-auto d-block" src="../assets/images/車埕木業展示館-1.jpeg" width="360" height="260" alt="車埕木業展示館-1">
+                </a>
                 <h5 class="text-center fw-bold py-3 text-success">車埕木業展示館</h5>
                 <ul class="list-unstyled">
                     <li class="mb-2">
-                        <span class="text-warning material-symbols-outlined">explore</span>
-                        <a class="align-top text-muted text-decoration-none" href="#">加入我的景點之旅</a>
+                        <a class="text-muted text-decoration-none" href="#">
+                            <span class="align-top text-warning material-symbols-outlined">explore</span>
+                            加入我的景點之旅</a>
                     </li>
                     <li class="mb-2">
-                        <span class="text-warning material-symbols-outlined">travel_explore</span>
-                        <a class="align-top text-muted text-decoration-none" href="#">加入自訂行程</a>
+                        <a class="text-muted text-decoration-none" href="#">
+                            <span class="align-top text-warning material-symbols-outlined">travel_explore</span>
+                            加入自訂行程</a>
                     </li>
                     <li class="mb-2 me-1">
                         <a class="text-decoration-none rounded-pill bg-secondary text-white fs-14 py-1 p-12 me-2" href="#"># 車埕 </a>
@@ -250,7 +227,7 @@
                     </li>
                 </ul>
                 <ul class="list-unstyled d-flex justify-content-between align-items-center">
-                    <%- include('./layout/browse'); -%><!-- 連至8-2 -->
+                    <%- include('./layout/browse'); -%>
                     <li>
                         <a class="align-top text-dark text-decoration-none" href="#">0818人收藏 
                             <span class="align-top text-danger material-symbols-outlined">heart_plus</span>
@@ -263,16 +240,21 @@
 
         <div class="col-md-4 px-3">
             <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a href="#"><img class="bor-rad-24 mx-auto d-block" src="../assets/images/清水鬼洞-1.jpeg" width="360" height="260" alt="清水鬼洞-1"></a><!-- 連至8-2 -->
+                <a href="in attractions.html">
+                    <img class="bor-rad-24 mx-auto d-block" src="../assets/images/清水鬼洞-1.jpeg" width="360" height="260" alt="清水鬼洞-1">
+                </a>
                 <h5 class="text-center fw-bold py-3 text-success">清水鬼洞</h5>
                 <ul class="list-unstyled">
                     <li class="mb-2">
-                        <span class="text-warning material-symbols-outlined">explore</span>
-                        <a class="align-top text-muted text-decoration-none" href="#">加入我的景點之旅</a>
+                        
+                        <a class="text-muted text-decoration-none" href="#">
+                            <span class="align-top text-warning material-symbols-outlined">explore</span>
+                            加入我的景點之旅</a>
                     </li>
                     <li class="mb-2">
-                        <span class="text-warning material-symbols-outlined">travel_explore</span>
-                        <a class="align-top text-muted text-decoration-none" href="#">加入自訂行程</a>
+                        <a class="text-muted text-decoration-none" href="#">
+                            <span class="align-top text-warning material-symbols-outlined">travel_explore</span>
+                            加入自訂行程</a>
                     </li>
                     <li class="mb-2 me-1">
                         <a class="text-decoration-none rounded-pill bg-secondary text-white fs-14 py-1 p-12 me-2" href="#"># 戰備地道 </a>
@@ -280,7 +262,7 @@
                     </li>
                 </ul>
                 <ul class="list-unstyled d-flex justify-content-between align-items-center">
-                    <%- include('./layout/browse'); -%><!-- 連至8-2 -->
+                    <%- include('./layout/browse'); -%>
                     <li>
                         <a class="align-top text-dark text-decoration-none" href="#">7210人收藏 
                             <span class="align-top text-danger material-symbols-outlined">heart_plus</span>
@@ -293,16 +275,20 @@
 
         <div class="col-md-4 px-3">
             <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a href="#"><img class="bor-rad-24 mx-auto d-block" src="../assets/images/羅娜部落-1.jpeg" width="360" height="260"  alt="羅娜部落-1"></a><!-- 連至8-2 -->
+                <a href="in attractions.html">
+                    <img class="bor-rad-24 mx-auto d-block" src="../assets/images/羅娜部落-1.jpeg" width="360" height="260"  alt="羅娜部落-1">
+                </a>
                 <h5 class="text-center fw-bold py-3 text-success">羅娜部落</h5>
                 <ul class="list-unstyled">
                     <li class="mb-2">
-                        <span class="text-warning material-symbols-outlined">explore</span>
-                        <a class="align-top text-muted text-decoration-none" href="#">加入我的景點之旅</a>
+                        <a class="text-muted text-decoration-none" href="#">
+                            <span class="align-top text-warning material-symbols-outlined">explore</span>
+                            加入我的景點之旅</a>
                     </li>
                     <li class="mb-2">
-                        <span class="text-warning material-symbols-outlined">travel_explore</span>
-                        <a class="align-top text-muted text-decoration-none" href="#">加入自訂行程</a>
+                        <a class="text-muted text-decoration-none" href="#">
+                            <span class="align-top text-warning material-symbols-outlined">travel_explore</span>
+                            加入自訂行程</a>
                     </li>
                     <li class="mb-2 me-1">
                         <a class="text-decoration-none rounded-pill bg-secondary text-white fs-14 py-1 p-12 me-2" href="#"># 羅娜部落 </a>
@@ -310,7 +296,7 @@
                     </li>
                 </ul>
                 <ul class="list-unstyled d-flex justify-content-between align-items-center">
-                    <%- include('./layout/browse'); -%><!-- 連至8-2 -->
+                    <%- include('./layout/browse'); -%>
                     <li>
                         <a class="text-dark text-decoration-none" href="#">5566人收藏 
                             <span class="align-top text-danger material-symbols-outlined">heart_plus</span>
