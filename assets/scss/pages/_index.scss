@@ -172,3 +172,40 @@
 .mt-124{
   margin-top: 124px;
 }
+
+
+
+.marqueeArea{
+  height: 200px;
+  width: 6140px;
+  overflow: hidden;
+  position: relative;
+}
+
+.marqueeText{
+  margin-top: 28px;
+  margin-bottom: 28px;
+  display: block;
+  width: 200%;
+  height: 180px;
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 20s linear infinite;
+
+  
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+.mt-64{
+  margin-top: 64px;
+}
+
+.mb-64{
+  margin-bottom: 64px;
+}
