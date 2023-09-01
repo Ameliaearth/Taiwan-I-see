@@ -14,9 +14,9 @@
   </head>
 
   <body>
-    
-
-    <div class="banner">
+ 
+   
+    <div class="banner position-relative ">
       <!-- header不一樣 -->
       <%- include('./layout/index_header-logged'); -%>
 
@@ -77,13 +77,15 @@
         </div>
       </div>
       
+
       <div class="container chooseType">
 
 
-        <div class="row">
+        <div class="row justify-content-between">
+          <!-- 依地區區塊 -->
           <div class="col-xl-6">
 
-            <h2 class="mb-0 text-primary">直接找景點</h2>
+            <h2 class="mb-1 text-primary">直接找景點</h2>
             <p class="mb-0" style="color:#B4875E;">Choose Your Type</p>
             <p class="text-white mb-12 mt-32" >---- 依地區</p>
 
@@ -121,32 +123,73 @@
             
           </div>
 
+          <!-- 依類型區塊 -->
+          <div class="col-xl-5 mt-116">
+            <div class="d-flex justify-content-end">
+              <img src="../assets/images/icon_map.png" alt="icon_map">
+              <img class="ms-5" src="../assets/images/icon_camera.png" alt="icon_camera">
+            </div>
 
-          <div class="col-xl-5">
+            <p class="text-white mb-12 mt-12" >---- 依類型</p>
+            
+            <div class="myRadius-24 bg-white shadow pt-4 pb-44 ps-4 pe-4">
+              <img src="../assets/images/icon_mark.png" alt="icon_mark">
+              <div class="chooseCulture d-flex flex-wrap justify-content-between">
+                <a href="#" class="btn bg-light rounded-pill mb-3" style="width: 116px;"> <span class="me-2">#</span> 特色夜市</a>
+                <a href="#" class="btn bg-light rounded-pill mb-3" style="width: 116px;"> <span class="me-2">#</span> 老街漫遊</a>
+                <a href="#" class="btn bg-light rounded-pill mb-3" style="width: 116px;"> <span class="me-2">#</span> 古蹟巡禮</a>
+                <a href="#" class="btn bg-light rounded-pill mb-3" style="width: 116px;"> <span class="me-2">#</span> 博物館別</a>
+                <a href="#" class="btn bg-light rounded-pill mb-3" style="width: 116px;"> <span class="me-2">#</span> 戰地文化</a>
+                <a href="#" class="btn bg-light rounded-pill mb-3" style="width: 116px;"> <span class="me-2">#</span> 原民文化</a>
+                <a href="#" class="btn bg-light rounded-pill mb-3" style="width: 116px;"> <span class="me-2">#</span> 客家文化</a>
+                <a href="#" class="btn bg-light rounded-pill mb-3" style="width: 116px;"> <span class="me-2">#</span> 山明水秀</a>
+              </div>
+            </div>
+          </div>
 
+        </div>
+        
+      </div>
+
+      <!-- 波浪底圖 -->
+      <div class="imgType bottom-0"></div>
+    
+    </div>
+
+
+    <div class="container mt-124">
+      <h2 class="mb-1 text-primary">熱門收藏景點</h2>
+      <p class="mb-0" style="color:#B4875E;">Best Tourist Attractions</p>
+
+      <div class="row justify-content-between mt-32">
+
+        <div class="col-xl-3">
+          <div class="p-3 position-relative" style="background-image:url(../assets/images/椬梧滯洪池-1.jpeg);height: 312px;width: 100%;">
+            <div class="p-1 position-absolute bg-white rounded d-flex align-items-center">
+              <img src="../assets/images/icon_location16.png" alt="icon_location16" style="width: 16px;height: 16px;">
+              <p class="mb-0 ms-1">雲林縣口湖鄉</p>
+            </div>
+            
+            <div class="position-absolute">
+              
+            </div>
           </div>
 
         </div>
 
-
-
-
+        <div class="col-xl-3">
+        </div>
+        <div class="col-xl-3">
+        </div>
+        <div class="col-xl-3">
+        </div>
       </div>
-
-
-
-
-
-
 
     </div>
 
-
-
-
-
-
+    
     <%- include('./layout/footer'); -%>
+
 
     <script type="module" src="../main.js"></script>
   </body>
