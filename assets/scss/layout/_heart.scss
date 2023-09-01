@@ -1,0 +1,15 @@
+.heart-container {
+    cursor: pointer;
+}
+  
+.heart {
+    display: block;
+    width: 20px;
+    height: 18px;
+    background-image: url('../images/icon_heart_empty.png'); 
+    background-size: cover;
+}
+
+.heart:hover,.heart.clicked{
+    background-image: url('../images/icon_heart_red.png'); 
+}
