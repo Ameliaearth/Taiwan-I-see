@@ -37,33 +37,248 @@
         </ul>
         <div class="col-4 d-flex align-items-center justify-content-end">
             <button class="btn btn-outline-info me-2" type="button">行程封面照</button>
-            <a class="btn btn-outline-info" href="#">行程總導覽</a><!--連7-3-->
+            <a class="btn btn-outline-info" href="view-schedule.html">行程總導覽</a>
         </div>
     </div>
 
 
-    <!--DAY--><!--以下未完成-->
-    <ul class="nav nav-pills nav-fill">
-        <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Active</a>
+    <!--DAY nav-->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="DAY1-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="DAY1" aria-selected="true">DAY1</button>
         </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="#">Much longer nav link</a>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="DAY2-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="DAY2" aria-selected="false">DAY2</button>
         </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="DAY3-tab" data-bs-toggle="tab" data-bs-target="#lots" type="button" role="tab" aria-controls="DAY3" aria-selected="false">DAY3</button>
         </li>
-
-        <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="DAY4-tab" data-bs-toggle="tab" data-bs-target="#paging" type="button" role="tab" aria-controls="DAY4" aria-selected="false">DAY4</button>
         </li>
     </ul>
+<!--DAY 1-->
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="DAY1-tab">
+
+                <div class="d-flex justify-content-center flex-column" id="target">
+                    <div class="card col-10 my-3 ps-3 box" id="box1" draggable="true">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-6 py-3 px-3">
+                                <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/桃園客家文化館-2.jpg" height="300" alt="桃園客家文化館-2" draggable="true" ondragstart="drag(event)" id="drag1" />
+                            </div>
+                            <div class="col-md-6 pt-4">
+                                <ul class="card-body list-unstyled">
+                                    <h3 class="card-title fw-bold">桃園客家文化館</h3>
+                                    <li class="mb-3">
+                                        <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                        <p class="d-inline text-dark fs-6">桃園市龍潭區中正路三林段500號</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-10 my-3 ps-3 box" id="box1" draggable="true">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-6 py-3 px-3">
+                                <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/深坑老街-2.PNG" height="300" alt="深坑老街-2" draggable="true" ondragstart="drag(event)" id="drag1" />
+                            </div>
+                            <div class="col-md-6 pt-4">
+                                <ul class="card-body list-unstyled">
+                                    <h3 class="card-title fw-bold">深坑老街</h3>
+                                    <li class="mb-3">
+                                        <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                        <p class="d-inline text-dark fs-6">新北市深坑區深坑街</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-10 my-3 ps-3 box" id="box1" draggable="true">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-6 py-3 px-3">
+                                <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/饒河街觀光夜市-2.jpg" height="300" alt="饒河街觀光夜市-2" draggable="true" ondragstart="drag(event)" id="drag1" />
+                            </div>
+                            <div class="col-md-6 pt-4">
+                                <ul class="card-body list-unstyled">
+                                    <h3 class="card-title fw-bold">饒河街觀光夜市</h3>
+                                    <li class="mb-3">
+                                        <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                        <p class="d-inline text-dark fs-6">台北市松山區饒河街</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-10 my-3 ps-3 box" id="box1" draggable="true">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-6 py-3 px-3">
+                                <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/蘭嶼-2.jpeg" height="300" alt="蘭嶼-2" draggable="true" ondragstart="drag(event)" id="drag1" />
+                            </div>
+                            <div class="col-md-6 pt-4">
+                                <ul class="card-body list-unstyled">
+                                    <h3 class="card-title fw-bold">蘭嶼</h3>
+                                    <li class="mb-3">
+                                        <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                        <p class="d-inline text-dark fs-6">臺東縣蘭嶼鄉</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-10 my-3 ps-3 box" id="box1" draggable="true">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-6 py-3 px-3">
+                                <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/古寧頭戰史館-2.jpeg" height="300" alt="古寧頭戰史館-2" draggable="true" ondragstart="drag(event)" id="drag1" />
+                            </div>
+                            <div class="col-md-6 pt-4">
+                                <ul class="card-body list-unstyled">
+                                    <h3 class="card-title fw-bold">古寧頭戰史館</h3>
+                                    <li class="mb-3">
+                                        <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                        <p class="d-inline text-dark fs-6">金門縣金寧鄉北山村古寧頭</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+<!--DAY 2-->
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="DAY2-tab">
+            <div class="d-flex justify-content-center flex-column">
+                <div class="card col-10 my-3 ps-3 box" id="box1" draggable="true">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 py-3 px-3">
+                            <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/金門歷史民俗博物館-2.jpeg" height="300" alt="金門歷史民俗博物館-2" draggable="true" ondragstart="drag(event)" id="drag1" />
+                        </div>
+                        <div class="col-md-6 pt-4">
+                            <ul class="card-body list-unstyled">
+                                <h3 class="card-title fw-bold">金門歷史民俗博物館</h3>
+                                <li class="mb-3">
+                                    <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                    <p class="d-inline text-dark fs-6">金門縣金沙鎮文化路450巷52號</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-10 my-3 ps-3 box" id="box1" draggable="true">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 py-3 px-3">
+                            <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/池上客家文化園區-2.jpg" height="300" alt="池上客家文化園區-2" draggable="true" ondragstart="drag(event)" id="drag1" />
+                        </div>
+                        <div class="col-md-6 pt-4">
+                            <ul class="card-body list-unstyled">
+                                <h3 class="card-title fw-bold">池上客家文化園區</h3>
+                                <li class="mb-3">
+                                    <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                    <p class="d-inline text-dark fs-6">臺東縣池上鄉新興村新光路1號</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-10 my-3 ps-3 box" id="box1" draggable="true">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 py-3 px-3">
+                            <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/文臺寶塔-2.jpeg" height="300" alt="文臺寶塔-2" draggable="true" ondragstart="drag(event)" id="drag1" />
+                        </div>
+                        <div class="col-md-6 pt-4">
+                            <ul class="card-body list-unstyled">
+                                <h3 class="card-title fw-bold">文臺寶塔</h3>
+                                <li class="mb-3">
+                                    <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                    <p class="d-inline text-dark fs-6">金門縣金城鎮古城村大文台古崗100號</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--DAY 3-->
+        <div class="tab-pane fade" id="lots" role="tabpanel" aria-labelledby="DAY3-tab">
+            <div class="d-flex justify-content-center flex-column">
+                <div class="card col-10 my-3 ps-3 box" id="box1" draggable="true">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 py-3 px-3">
+                            <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/鯉魚潭-2.jpg" height="300" alt="鯉魚潭-2" draggable="true" ondragstart="drag(event)" id="drag1" />
+                        </div>
+                        <div class="col-md-6 pt-4">
+                            <ul class="card-body list-unstyled">
+                                <h3 class="card-title fw-bold">鯉魚潭</h3>
+                                <li class="mb-3">
+                                    <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                    <p class="d-inline text-dark fs-6">花蓮縣壽豐鄉台9丙線</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card col-10 my-3 ps-3 box" id="box1" draggable="true">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 py-3 px-3">
+                            <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/涼山遊憩區-2.jpg" height="300" alt="涼山遊憩區-2" draggable="true" ondragstart="drag(event)" id="drag1" />
+                        </div>
+                        <div class="col-md-6 pt-4">
+                            <ul class="card-body list-unstyled">
+                                <h3 class="card-title fw-bold">涼山遊憩區</h3>
+                                <li class="mb-3">
+                                    <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                    <p class="d-inline text-dark fs-6">屏東縣涼山村涼山14-20號</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card col-10 my-3 ps-3 box" id="box1" draggable="true">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 py-3 px-3">
+                            <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/梧棲夜市-2.jpg" height="300" alt="梧棲夜市-2" draggable="true" ondragstart="drag(event)" id="drag1" />
+                        </div>
+                        <div class="col-md-6 pt-4">
+                            <ul class="card-body list-unstyled">
+                                <h3 class="card-title fw-bold">梧棲夜市</h3>
+                                <li class="mb-3">
+                                    <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                    <p class="d-inline text-dark fs-6">台中市梧棲區文化路一段537號</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--DAY 4-->
+        <div class="tab-pane fade" id="paging" role="tabpanel" aria-labelledby="DAY4-tab">
+            <div class="card col-10 my-3 ps-3 box" id="box1" draggable="true">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-6 py-3 px-3">
+                        <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="../assets/images/路思義教堂-3.jpeg" height="300" alt="路思義教堂-3" draggable="true" ondragstart="drag(event)" id="drag1" />
+                    </div>
+                    <div class="col-md-6 pt-4">
+                        <ul class="card-body list-unstyled">
+                            <h3 class="card-title fw-bold">路思義教堂</h3>
+                            <li class="mb-3">
+                                <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                                <p class="d-inline text-dark fs-6">台中市西屯區台灣大道四段1727號</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--button-->
+    <div class="d-grid gap-2 col-6 mx-auto mb-4">
+        <a class="btn btn-outline-success" href="list-schedule.html">
+            <span class="align-top material-symbols-outlined">add </span>新增行程</a>
+    </div>
 
 </div>
 
@@ -78,6 +293,49 @@
 
 <script type="module" src="../main.js"></script>
 
+<script>
+//分頁
+    var triggerTabList = [].slice.call(document.querySelectorAll('#myTab button'))
+    triggerTabList.forEach(function (triggerEl) {
+    var tabTrigger = new bootstrap.Tab(triggerEl)
+
+    triggerEl.addEventListener('click', function (event) {
+        event.preventDefault()
+        tabTrigger.show()
+    });
+});
+
+//拖曳順序
+$(".box").on({
+    "dragstart": function(event){
+    console.log("dragstart");
+    event.originalEvent.dataTransfer.setData('text/plain',event.target.id)
+    },
+    "dragend": function(){
+    console.log("dragend");
+    }
+    });
+
+    $("#target").on({
+    "dragenter": function(){
+    console.log("dragenter");
+    },
+    "dragover": function(event){
+    event.preventDefault();
+    console.log("dragover");
+    },
+    "dragleave": function(){
+    console.log("dragleave");
+    },
+    "drop": function(event){
+    event.preventDefault();
+    console.log("drop");
+    let id = event.originalEvent.dataTransfer.getData('text/plain');
+    $("#"+id).appendTo(event.target);
+    }
+});
+
+</script>
 
 </body>
 
