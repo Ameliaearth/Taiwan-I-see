@@ -33,6 +33,7 @@
         <ul>
           <li><a href="attractions.html">2-1頁面</a></li>
           <li><a href="hot attractions.html">附近熱門景點</a></li>
+          <li><a href="list-schedule.html">7-1頁面</a></li>
         </ul>
          <!-- 切換用，開發完成後刪掉 -->
 
@@ -167,7 +168,7 @@
     <div id="cardContainer" class="row">
         <div class="col-md-4 px-3 jq-card">
             <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a target="_blank" href="../card introduction/in attractions-故宮博物院.html">
+                <a target="_blank" href="in attractions-故宮博物院.html">
                     <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/故宮博物院-1-2d265f93.jpg" height="260" alt="故宮博物院-1">
                 </a>
                 <h5 class="text-center fw-bold py-3 text-success">故宮博物院</h5>
@@ -203,7 +204,7 @@
 
         <div class="col-md-4 px-3 jq-card">
             <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a target="_blank" href="../card introduction/in attractions-廣盛老街.html">
+                <a target="_blank" href="in attractions-廣盛老街.html">
                     <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/廣盛老街-2-f3478a91.jpeg" height="260" alt="廣盛老街-2">
                 </a>
                 <h5 class="text-center fw-bold py-3 text-success">廣盛老街</h5>
@@ -239,7 +240,7 @@
 
         <div class="col-md-4 px-3 jq-card">
             <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a target="_blank" href="../card introduction/in attractions-路思義教堂.html">
+                <a target="_blank" href="in attractions-路思義教堂.html">
                     <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/路思義教堂-3-9803fb89.jpeg" height="260" alt="路思義教堂-3">
                 </a>
                 <h5 class="text-center fw-bold py-3 text-success">路思義教堂</h5>
@@ -275,7 +276,7 @@
 
         <div class="col-md-4 px-3 jq-card">
             <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a target="_blank" href="../card introduction/in attractions-車埕木業展示館.html">
+                <a target="_blank" href="in attractions-車埕木業展示館.html">
                     <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/車埕木業展示館-1-e1f7141b.jpeg" height="260" alt="車埕木業展示館-1">
                 </a>
                 <h5 class="text-center fw-bold py-3 text-success">車埕木業展示館</h5>
@@ -311,7 +312,7 @@
 
         <div class="col-md-4 px-3 jq-card">
             <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a target="_blank" href="../card introduction/in attractions-清水鬼洞.html">
+                <a target="_blank" href="in attractions-清水鬼洞.html">
                     <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/清水鬼洞-2-cb318446.jpeg" height="260" alt="清水鬼洞-2">
                 </a>
                 <h5 class="text-center fw-bold py-3 text-success">清水鬼洞</h5>
@@ -348,7 +349,7 @@
 
         <div class="col-md-4 px-3 jq-card">
             <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a target="_blank" href="../card introduction/in attractions-羅娜部落.html">
+                <a target="_blank" href="in attractions-羅娜部落.html">
                     <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/羅娜部落-1-dce69be8.jpeg" height="260"  alt="羅娜部落-1">
                 </a>
                 <h5 class="text-center fw-bold py-3 text-success">羅娜部落</h5>
@@ -410,7 +411,7 @@
             <p class="footerText">本網站致力於發掘與檢索台灣每個景點最深層的在地文化透過使用者們相互分享與回饋，找到彼此最有感的連結打造台灣人心中具深度的旅遊方式尋找深刻的景點。</p>
 
             <!-- 此連結要到7-1 -->
-            <a href="#" class="footerContentbtn mx-auto ms-lg-0">
+            <a href="list-schedule.html" class="footerContentbtn mx-auto ms-lg-0">
 
                 <div class="position-relative">
                     <div class="btnUnder"></div>
@@ -443,6 +444,23 @@
 
 
 
+
+<script>
+    $(document).ready(function() {
+    $('#filterInput').on('input', function() {
+        var filterValue = $(this).val().toLowerCase();
+        // 收索卡片
+        $('#cardContainer .jq-card').each(function() {
+            var cardText = $(this).text().toLowerCase();
+            if (cardText.includes(filterValue)) {
+                $(this).show(); // 符合條件，顯示卡片
+            } else {
+                $(this).hide(); // 不符合條件，隐藏卡片
+            }
+        });
+    });
+});
+</script>
 
 
 </body>

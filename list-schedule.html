@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>附近熱門景點</title>
+<title>目前景點清單</title>
 <!-- font Anton&Inter CDN  -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,7 @@
 <!-- jquery CDN -->
 <script src="../js/code.jquery.com_jquery-3.7.1.min.js"></script>
 <script src="../js/all.js"></script>
+
   <script type="module" crossorigin src="/Taiwan-I-see/assets/main-470554d3.js"></script>
   <link rel="stylesheet" href="/Taiwan-I-see/assets/main-7bc29bf5.css">
 </head>
@@ -81,216 +82,119 @@
 
     </div>
   </nav>
-    <!-- main-pic -->
-<div class="container my-4">
-    <h2 class="text-success fw-bold py-3">附近熱門景點</h2>
-
-    <div class="row">
-        <div class="col-md-6 px-3">
-            <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a href="#"><img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/東勢客家文化園區-1-756bccf1.jpeg" height="260" alt="東勢客家文化園區-1"></a>
-                <h5 class="text-center fw-bold py-3 text-success">東勢客家文化園區</h5>
-                <ul class="list-unstyled">
-                    <li class="mb-2 me-1 border-top border-bottom mb-3 py-2 d-flex justify-content-between align-items-center">
-                        <div>
-                            <a class="text-decoration-none rounded-pill bg-g text-white fs-14 py-1 p-12 me-2" href="#"># 中部 </a>
-                            <a class="text-decoration-none rounded-pill bg-g text-white fs-14 py-1 p-12" href="#"># 客家文化</a>
-                        </div>
-                        <div>
-                            <span class="align-top material-symbols-outlined">schedule</span>
-                            <p class="d-inline text-dark text-decoration-none">30分鐘</p>
-                        </div>
-                    </li>
-                    <li class="mb-2">
-                        <span class="align-top text-warning material-symbols-outlined">location_on</span>
-                        <p class="d-inline text-dark fs-6">台中市東勢區中山路1號</p>
-                    </li>
-                    <li class="mb-2">
-                        <a class="text-muted text-decoration-none" href="#">
-                            <span class="align-top text-warning material-symbols-outlined">explore</span>
-                            加入我的景點之旅</a>
-                    </li>
-                    <li class="mb-2">
-                        <a class="text-muted text-decoration-none" href="#">
-                            <span class="align-top text-warning material-symbols-outlined">travel_explore</span>
-                            加入自訂行程</a>
-                    </li>
-                </ul>
-            </div>
+<!-- nav -->
+<div class="container">
+    <h2 class="text-success fw-bold py-3">景點清單</h2>
+    <div class="row d-flex justify-content-center my-4">
+        <div class="row-cols-2 d-flex justify-content-center align-items-center">
+            <a class="me-2 btn btn-outline-success" href="attractions.html">
+                <span class="align-top material-symbols-outlined">add_circle </span>新增景點</a>
+            <a class="btn btn-outline-secondary" href="schedule.html">
+                <span class="align-top material-symbols-outlined">add </span>自訂行程</a>
         </div>
-
-        <div class="col-md-6 px-3">
-            <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a href="#"><img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/大東夜市-1-41e47a93.jpg" height="260" alt="大東夜市-1"></a>
-                <h5 class="text-center fw-bold py-3 text-success">大東夜市</h5>
-                <ul class="list-unstyled">
-                    <li class="mb-2 me-1 border-top border-bottom mb-3 py-2 d-flex justify-content-between align-items-center">
-                        <div>
-                            <a class="text-decoration-none rounded-pill bg-g text-white fs-14 py-1 p-12 me-2" href="#"># 南部 </a>
-                            <a class="text-decoration-none rounded-pill bg-g text-white fs-14 py-1 p-12" href="#"># 特色夜市</a>
-                        </div>
-                        <div>
-                            <span class="align-top material-symbols-outlined">schedule</span>
-                            <p class="d-inline text-dark text-decoration-none">1.5小時</p>
-                        </div>
-                    </li>
-                    <li class="mb-2">
-                        <span class="align-top text-warning material-symbols-outlined">location_on</span>
-                        <p class="d-inline text-dark fs-6">台南市東區林森路一段276號</p>
-                    </li>
-                    <li class="mb-2">
-                        <a class="text-muted text-decoration-none" href="#">
-                            <span class="align-top text-warning material-symbols-outlined">explore</span>
-                            加入我的景點之旅</a>
-                    </li>
-                    <li class="mb-2">
-                        <a class="text-muted text-decoration-none" href="#">
-                            <span class="align-top text-warning material-symbols-outlined">travel_explore</span>
-                            加入自訂行程</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-md-6 px-3">
-            <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a href="#"><img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/都蘭遺址-1-1cef4b1e.jpg" height="260" alt="都蘭遺址-1"></a>
-                <h5 class="text-center fw-bold py-3 text-success">都蘭遺址</h5>
-                <ul class="list-unstyled">
-                    <li class="mb-2 me-1 border-top border-bottom mb-3 py-2 d-flex justify-content-between align-items-center">
-                        <div>
-                            <a class="text-decoration-none rounded-pill bg-g text-white fs-14 py-1 p-12 me-2" href="#"># 東部 </a>
-                            <a class="text-decoration-none rounded-pill bg-g text-white fs-14 py-1 p-12" href="#"># 古蹟巡禮</a>
-                        </div>
-                        <div>
-                            <span class="align-top material-symbols-outlined">schedule</span>
-                            <p class="d-inline text-dark text-decoration-none">2小時</p>
-                        </div>
-                    </li>
-                    <li class="mb-2">
-                        <span class="align-top text-warning material-symbols-outlined">location_on</span>
-                        <p class="d-inline text-dark fs-6">台東縣東河鄉都蘭山下土地銀行農場山麓</p>
-                    </li>
-                    <li class="mb-2">
-                        <a class="text-muted text-decoration-none" href="#">
-                            <span class="align-top text-warning material-symbols-outlined">explore</span>
-                            加入我的景點之旅</a>
-                    </li>
-                    <li class="mb-2">
-                        <a class="text-muted text-decoration-none" href="#">
-                            <span class="align-top text-warning material-symbols-outlined">travel_explore</span>
-                            加入自訂行程</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-md-6 px-3">
-            <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a href="#"><img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/中央老街-1-fdfb95bc.jpg" height="260" alt="中央老街-1"></a>
-                <h5 class="text-center fw-bold py-3 text-success">中央老街</h5>
-                <ul class="list-unstyled">
-                    <li class="mb-2 me-1 border-top border-bottom mb-3 py-2 d-flex justify-content-between align-items-center">
-                        <div>
-                            <a class="text-decoration-none rounded-pill bg-g text-white fs-14 py-1 p-12 me-2" href="#"># 離島 </a>
-                            <a class="text-decoration-none rounded-pill bg-g text-white fs-14 py-1 p-12" href="#"># 老街漫遊</a>
-                        </div>
-                        <div>
-                            <span class="align-top material-symbols-outlined">schedule</span>
-                            <p class="d-inline text-dark text-decoration-none">45分鐘</p>
-                        </div>
-                    </li>
-                    <li class="mb-2">
-                        <span class="align-top text-warning material-symbols-outlined">location_on</span>
-                        <p class="d-inline text-dark fs-6">澎湖縣馬公市中央街</p>
-                    </li>
-                    <li class="mb-2">
-                        <a class="text-muted text-decoration-none" href="#">
-                            <span class="align-top text-warning material-symbols-outlined">explore</span>
-                            加入我的景點之旅</a>
-                    </li>
-                    <li class="mb-2">
-                        <a class="text-muted text-decoration-none" href="#">
-                            <span class="align-top text-warning material-symbols-outlined">travel_explore</span>
-                            加入自訂行程</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-md-6 px-3">
-            <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a href="#"><img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/文臺寶塔-1-5cf60c0b.jpeg" height="260" alt="文臺寶塔-1"></a>
-                <h5 class="text-center fw-bold py-3 text-success">文臺寶塔</h5>
-                <ul class="list-unstyled">
-                    <li class="mb-2 me-1 border-top border-bottom mb-3 py-2 d-flex justify-content-between align-items-center">
-                        <div>
-                            <a class="text-decoration-none rounded-pill bg-g text-white fs-14 py-1 p-12 me-2" href="#"># 離島 </a>
-                            <a class="text-decoration-none rounded-pill bg-g text-white fs-14 py-1 p-12" href="#"># 古蹟巡禮</a>
-                        </div>
-                        <div>
-                            <span class="align-top material-symbols-outlined">schedule</span>
-                            <p class="d-inline text-dark text-decoration-none">1小時</p>
-                        </div>
-                    </li>
-                    <li class="mb-2">
-                        <span class="align-top text-warning material-symbols-outlined">location_on</span>
-                        <p class="d-inline text-dark fs-6">金門縣金城鎮古城村大文台古崗100號</p>
-                    </li>
-                    <li class="mb-2">
-                        <a class="text-muted text-decoration-none" href="#">
-                            <span class="align-top text-warning material-symbols-outlined">explore</span>
-                            加入我的景點之旅</a>
-                    </li>
-                    <li class="mb-2">
-                        <a class="text-muted text-decoration-none" href="#">
-                            <span class="align-top text-warning material-symbols-outlined">travel_explore</span>
-                            加入自訂行程</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-md-6 px-3">
-            <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a href="#"><img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/故宮博物院-1-2d265f93.jpg" height="260" alt="故宮博物院-1"></a>
-                <h5 class="text-center fw-bold py-3 text-success">故宮博物院</h5>
-                <ul class="list-unstyled">
-                    <li class="mb-2 me-1 border-top border-bottom mb-3 py-2 d-flex justify-content-between align-items-center">
-                        <div>
+        <div class="card col-10 my-3">
+            <div class="row">
+                <a class="col-md-6 py-3 px-3" target="_blank" href="in attractions-桃園客家文化館.html">
+                    <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="/Taiwan-I-see/assets/桃園客家文化館-2-85be040f.jpg" height="300" alt="桃園客家文化館-2">
+                </a>
+                <div class="col-md-6 pt-4">
+                    <ul class="card-body list-unstyled">
+                        <h3 class="card-title">桃園客家文化館</h3>
+                        <li class="mb-3 me-1">
                             <a class="text-decoration-none rounded-pill bg-g text-white fs-14 py-1 p-12 me-2" href="#"># 北部 </a>
-                            <a class="text-decoration-none rounded-pill bg-g text-white fs-14 py-1 p-12" href="#"># 博物館</a>
-                        </div>
-                        <div>
-                            <span class="align-top material-symbols-outlined">schedule</span>
-                            <p class="d-inline text-dark text-decoration-none">2小時</p>
-                        </div>
-                    </li>
-                    <li class="mb-2">
-                        <span class="align-top text-warning material-symbols-outlined">location_on</span>
-                        <p class="d-inline text-dark fs-6">台北市士林區至善路二段221號</p>
-                    </li>
-                    <li class="mb-2">
-                        <a class="text-muted text-decoration-none" href="#">
-                            <span class="align-top text-warning material-symbols-outlined">explore</span>
-                            加入我的景點之旅</a>
-                    </li>
-                    <li class="mb-2">
-                        <a class="text-muted text-decoration-none" href="#">
-                            <span class="align-top text-warning material-symbols-outlined">travel_explore</span>
-                            加入自訂行程</a>
-                    </li>
-                </ul>
+                            <a class="text-decoration-none rounded-pill bg-g text-white fs-14 py-1 p-12" href="#"># 客家文化</a>
+                        </li>
+                        <li class="mb-3">
+                            <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                            <p class="d-inline text-dark fs-6">桃園市龍潭區中正路三林段500號</p>
+                        </li>
+                        <li class="mb-3 me-1">
+                            <a class="text-decoration-none rounded-pill bg-secondary text-white fs-14 py-1 p-12 me-2" href="#"># 客家文化 </a>
+                            <a class="text-decoration-none rounded-pill bg-secondary text-white fs-14 py-1 p-12" href="#"># 桃園</a>
+                        </li>
+                    </ul>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-2">
+                        <a class="btn bg-warning" href="#">
+                            <span class="align-top material-symbols-outlined">bookmark_add </span>加入自訂行程</a>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- 載入更多 -->
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="btn btn-primary text-white" type="button">載入更多</button>
+        <div class="card col-10 my-3">
+            <div class="row">
+                <a class="col-md-6 py-3 px-3" target="_blank" href="in attractions-大武崙砲臺.html">
+                    <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="/Taiwan-I-see/assets/大武崙砲臺-1-29f3e3ae.PNG" height="300" alt="大武崙砲臺-1">
+                </a>
+                <div class="col-md-6 pt-4">
+                    <ul class="card-body list-unstyled">
+                        <h3 class="card-title">大武崙砲臺</h3>
+                        <li class="mb-3 me-1">
+                            <a class="text-decoration-none rounded-pill bg-g text-white fs-14 py-1 p-12 me-2" href="#"># 北部 </a>
+                            <a class="text-decoration-none rounded-pill bg-g text-white fs-14 py-1 p-12" href="#"># 戰地文化</a>
+                        </li>
+                        <li class="mb-3">
+                            <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                            <p class="d-inline text-dark fs-6"> 基隆市安樂區</p>
+                        </li>
+                        <li class="mb-3 me-1">
+                            <a class="text-decoration-none rounded-pill bg-secondary text-white fs-14 py-1 p-12 me-2" href="#"># 砲臺 </a>
+                            <a class="text-decoration-none rounded-pill bg-secondary text-white fs-14 py-1 p-12" href="#"># 戰地文化</a>
+                        </li>
+                    </ul>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-2">
+                        <a class="btn bg-warning" href="#">
+                            <span class="align-top material-symbols-outlined">bookmark_add </span>加入自訂行程</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <div class="card col-10 my-3">
+            <div class="row">
+                <a class="col-md-6 py-3 px-3" target="_blank" href="in attractions-芹壁村.html">
+                    <img class="bor-rad-24 mx-auto w-100 d-block img-fluid rounded-1" src="/Taiwan-I-see/assets/芹壁村-1-79b49b50.jpeg" height="300" alt="芹壁村-1">
+                </a>
+                <div class="col-md-6 pt-4">
+                    <ul class="card-body list-unstyled">
+                        <h3 class="card-title">芹壁村</h3>
+                        <li class="mb-3 me-1">
+                            <a class="text-decoration-none rounded-pill bg-g text-white fs-14 py-1 p-12 me-2" href="#"># 離島 </a>
+                            <a class="text-decoration-none rounded-pill bg-g text-white fs-14 py-1 p-12" href="#"># 山明水秀</a>
+                        </li>
+                        <li class="mb-3">
+                            <span class="align-top text-warning material-symbols-outlined">location_on</span>
+                            <p class="d-inline text-dark fs-6">連江縣北竿鄉</p>
+                        </li>
+                        <li class="mb-3 me-1">
+                            <a class="text-decoration-none rounded-pill bg-secondary text-white fs-14 py-1 p-12 me-2" href="#"># 芹仔 </a>
+                            <a class="text-decoration-none rounded-pill bg-secondary text-white fs-14 py-1 p-12" href="#"># 芹山</a>
+                        </li>
+                    </ul>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-2">
+                        <a class="btn bg-warning" href="#">
+                            <span class="align-top material-symbols-outlined">bookmark_add </span>加入自訂行程</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 頁數 -->
+        <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group" aria-label="First group">
+                <button type="button" class="btn btn-outline-secondary">1</button>
+                <button type="button" class="btn btn-outline-secondary">2</button>
+                <button type="button" class="btn btn-outline-secondary">3</button>
+                <button type="button" class="btn btn-outline-secondary">4</button>
+            </div>
+        </div>
     </div>
 </div>
+
+
+
+
 
 
 <div class="footer py-5">
@@ -336,22 +240,9 @@
 
 
 
-<script>
-    $(document).ready(function() {
-    $('#filterInput').on('input', function() {
-        var filterValue = $(this).val().toLowerCase();
-        // 收索卡片
-        $('#cardContainer .jq-card').each(function() {
-            var cardText = $(this).text().toLowerCase();
-            if (cardText.includes(filterValue)) {
-                $(this).show(); // 符合條件，顯示卡片
-            } else {
-                $(this).hide(); // 不符合條件，隐藏卡片
-            }
-        });
-    });
-});
-</script>
+
+
 
 </body>
+
 </html>

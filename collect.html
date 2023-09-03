@@ -32,6 +32,7 @@
         <ul>
           <li><a href="attractions.html">2-1頁面</a></li>
           <li><a href="hot attractions.html">附近熱門景點</a></li>
+          <li><a href="list-schedule.html">7-1頁面</a></li>
         </ul>
          <!-- 切換用，開發完成後刪掉 -->
 
@@ -168,7 +169,7 @@
     <div id="cardContainer" class="row">
         <div class="col-md-4 px-3 jq-card">
             <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a target="_blank" href="../card introduction/in attractions-東勢客家文化園區.html">
+                <a target="_blank" href="in attractions-東勢客家文化園區.html">
                     <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/東勢客家文化園區-1-756bccf1.jpeg" height="260" alt="東勢客家文化園區-1">
                 </a>
                 <h5 class="text-center fw-bold py-3 text-success">東勢客家文化園區</h5>
@@ -207,7 +208,7 @@
 
         <div class="col-md-4 px-3 jq-card">
             <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a target="_blank" href="../card introduction/in attractions-椬梧滯洪池.html">
+                <a target="_blank" href="in attractions-椬梧滯洪池.html">
                     <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/椬梧滯洪池-1-3d0bafd2.jpeg" height="260" alt="椬梧滯洪池-1">
                 </a>
                 <h5 class="text-center fw-bold py-3 text-success">椬梧滯洪池</h5>
@@ -246,7 +247,7 @@
 
         <div class="col-md-4 px-3 jq-card">
             <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a target="_blank" href="../card introduction/in attractions-梅山太平老街.html">
+                <a target="_blank" href="in attractions-梅山太平老街.html">
                     <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/梅山太平老街-1-498df1b6.jpeg" height="260" alt="梅山太平老街-1">
                 </a>
                 <h5 class="text-center fw-bold py-3 text-success">梅山太平老街</h5>
@@ -285,7 +286,7 @@
 
         <div class="col-md-4 px-3 jq-card">
             <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a target="_blank" href="../card introduction/in attractions-昭和J18.html">
+                <a target="_blank" href="in attractions-昭和J18.html">
                     <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/昭和J18-1-c9cb9941.jpg" height="260" alt="昭和J18-1">
                 </a>
                 <h5 class="text-center fw-bold py-3 text-success">昭和J18</h5>
@@ -324,7 +325,7 @@
 
         <div class="col-md-4 px-3 jq-card">
             <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a target="_blank" href="../card introduction/in attractions-東大門夜市.html">
+                <a target="_blank" href="in attractions-東大門夜市.html">
                     <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/東大門夜市-1-cbc0085a.jpg" height="260" alt="東大門夜市-1">
                 </a>
                 <h5 class="text-center fw-bold py-3 text-success">東大門夜市</h5>
@@ -363,7 +364,7 @@
 
         <div class="col-md-4 px-3 jq-card">
             <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
-                <a target="_blank" href="../card introduction/in attractions-光隆博物館.html">
+                <a target="_blank" href="in attractions-光隆博物館.html">
                     <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/光隆博物館-1-6e25449f.png" height="260"  alt="光隆博物館-1">
                 </a>
                 <h5 class="text-center fw-bold py-3 text-success">光隆博物館</h5>
@@ -427,7 +428,7 @@
             <p class="footerText">本網站致力於發掘與檢索台灣每個景點最深層的在地文化透過使用者們相互分享與回饋，找到彼此最有感的連結打造台灣人心中具深度的旅遊方式尋找深刻的景點。</p>
 
             <!-- 此連結要到7-1 -->
-            <a href="#" class="footerContentbtn mx-auto ms-lg-0">
+            <a href="list-schedule.html" class="footerContentbtn mx-auto ms-lg-0">
 
                 <div class="position-relative">
                     <div class="btnUnder"></div>
@@ -457,6 +458,24 @@
     </div>
 </div>
 
+
+
+<script>
+    $(document).ready(function() {
+    $('#filterInput').on('input', function() {
+        var filterValue = $(this).val().toLowerCase();
+        // 收索卡片
+        $('#cardContainer .jq-card').each(function() {
+            var cardText = $(this).text().toLowerCase();
+            if (cardText.includes(filterValue)) {
+                $(this).show(); // 符合條件，顯示卡片
+            } else {
+                $(this).hide(); // 不符合條件，隐藏卡片
+            }
+        });
+    });
+});
+</script>
 
 </body>
 
