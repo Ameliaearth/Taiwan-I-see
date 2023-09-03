@@ -13,12 +13,39 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- google font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+ 
 
-    <script type="module" crossorigin src="/Taiwan-I-see/assets/main-470554d3.js"></script>
-    <link rel="stylesheet" href="/Taiwan-I-see/assets/main-7bc29bf5.css">
+    <script type="module" crossorigin src="/Taiwan-I-see/assets/main-a541a9db.js"></script>
+    <link rel="stylesheet" href="/Taiwan-I-see/assets/main-83f499c6.css">
   </head>
 
+
   <body>
+  <!-- AOS視差滾動 -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 800, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  });
+  </script>
  
    
     <div class="banner position-relative ">
@@ -81,7 +108,6 @@
 
     </div>
   </nav>
-      
       <div class="container">
         <h1 class="indexTitle">Taiwan, I see.</h1>       
 
@@ -111,7 +137,7 @@
           </div>
 
           <!-- 內容區塊 -->
-          <div class="monthPromotion d-lg-flex justify-content-between align-items-center">
+          <div class="monthPromotion d-lg-flex justify-content-between align-items-center" data-aos="fade-up">
             <!-- 主圖 -->
             <div class="monthImg">
               <a href="#"><img src="/Taiwan-I-see/assets/this_month-724b85c7.png" alt="this_month"></a>
@@ -144,48 +170,48 @@
 
         <div class="row justify-content-between">
           <!-- 依地區區塊 -->
-          <div class="col-xl-6">
+          <div class="col-xl-6"  data-aos="fade-right">
 
             <h2 class="mb-1 text-primary">直接找景點</h2>
             <p class="mb-0" style="color:#B4875E;">Choose Your Type</p>
             <p class="text-white mb-12 mt-32" >---- 依地區</p>
 
-            <div class="chooseNorth">
+            <a href="#" class="chooseNorth" style="text-decoration: none;">
               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGqSURBVHgBrZU9SwNBEIbfmSh+NFooWF4ELVXERhC0svEzrWg8/4F2xiax8ezUX+CpYBu/8gMCKSwDWohNoqSxkVQaCN64e9EQw+W4JD5wLLs7897c3M4swYNkwuzv7PkySXhWBBOAGO6GUJYYeYhzvRC7sL18qX7h5mB9lZlPIeiHP3mC7NcLc+3k7nDziImTAcQ0hoBOU1Y07hmh3hAggVYgOl7cPdupCqasDVO/DW3gCEeW9+wrV/DOiubUYKAdCMVyicMhHZ2amV424al5DA6P4f31KYhkdyjkvDGIVxpZFB4zGBqdxMhMBMGipDmW3zPmQbn0gftLqxnRcYZ7cBvTpKjBCEBHVy861UMBbFUOVSn50NM3gOm1GAoPGTxnkvCFKMsEyv6LmEbkhYWcdKP9oZHJ4GI6QPAVuZ2l28kFrF8/ufxi7CzMkYRddBzeQpuo1O3r0f3LugZVYzhBiyhf1cZsuyJcw60VTaiFeJNiJ0ux821UI60jZZmq80gcPhVU8SSVKtrSX/dnuZG9FgbLiroCDHUcJn5E8kTIqlaXLn/C1vmv9/sGidic8hFJawAAAAAASUVORK5CYII=" alt="icon_brownarrow" >
               <span class="ms-2 text-white">北部</span>
-            </div>
+            </a>
 
             <div class="d-flex">
               <div class="w66">
 
                 <div class="d-flex">
-                  <div class="chooseIsland">
+                  <a href="#" class="chooseIsland" style="text-decoration: none;">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGqSURBVHgBrZU9SwNBEIbfmSh+NFooWF4ELVXERhC0svEzrWg8/4F2xiax8ezUX+CpYBu/8gMCKSwDWohNoqSxkVQaCN64e9EQw+W4JD5wLLs7897c3M4swYNkwuzv7PkySXhWBBOAGO6GUJYYeYhzvRC7sL18qX7h5mB9lZlPIeiHP3mC7NcLc+3k7nDziImTAcQ0hoBOU1Y07hmh3hAggVYgOl7cPdupCqasDVO/DW3gCEeW9+wrV/DOiubUYKAdCMVyicMhHZ2amV424al5DA6P4f31KYhkdyjkvDGIVxpZFB4zGBqdxMhMBMGipDmW3zPmQbn0gftLqxnRcYZ7cBvTpKjBCEBHVy861UMBbFUOVSn50NM3gOm1GAoPGTxnkvCFKMsEyv6LmEbkhYWcdKP9oZHJ4GI6QPAVuZ2l28kFrF8/ufxi7CzMkYRddBzeQpuo1O3r0f3LugZVYzhBiyhf1cZsuyJcw60VTaiFeJNiJ0ux821UI60jZZmq80gcPhVU8SSVKtrSX/dnuZG9FgbLiroCDHUcJn5E8kTIqlaXLn/C1vmv9/sGidic8hFJawAAAAAASUVORK5CYII=" alt="icon_brownarrow" >
                     <span class="ms-2 text-white">離島</span>
-                  </div>
+                  </a>
 
-                  <div class="chooseMiddle">
+                  <a href="#" class="chooseMiddle" style="text-decoration: none;">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGqSURBVHgBrZU9SwNBEIbfmSh+NFooWF4ELVXERhC0svEzrWg8/4F2xiax8ezUX+CpYBu/8gMCKSwDWohNoqSxkVQaCN64e9EQw+W4JD5wLLs7897c3M4swYNkwuzv7PkySXhWBBOAGO6GUJYYeYhzvRC7sL18qX7h5mB9lZlPIeiHP3mC7NcLc+3k7nDziImTAcQ0hoBOU1Y07hmh3hAggVYgOl7cPdupCqasDVO/DW3gCEeW9+wrV/DOiubUYKAdCMVyicMhHZ2amV424al5DA6P4f31KYhkdyjkvDGIVxpZFB4zGBqdxMhMBMGipDmW3zPmQbn0gftLqxnRcYZ7cBvTpKjBCEBHVy861UMBbFUOVSn50NM3gOm1GAoPGTxnkvCFKMsEyv6LmEbkhYWcdKP9oZHJ4GI6QPAVuZ2l28kFrF8/ufxi7CzMkYRddBzeQpuo1O3r0f3LugZVYzhBiyhf1cZsuyJcw60VTaiFeJNiJ0ux821UI60jZZmq80gcPhVU8SSVKtrSX/dnuZG9FgbLiroCDHUcJn5E8kTIqlaXLn/C1vmv9/sGidic8hFJawAAAAAASUVORK5CYII=" alt="icon_brownarrow" >
                     <span class="ms-2 text-white">中部</span>
-                  </div>
+                  </a>
                 </div>
 
-                <div class="chooseSouth">
+                <a href="#" class="chooseSouth" style="text-decoration: none;">
                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGqSURBVHgBrZU9SwNBEIbfmSh+NFooWF4ELVXERhC0svEzrWg8/4F2xiax8ezUX+CpYBu/8gMCKSwDWohNoqSxkVQaCN64e9EQw+W4JD5wLLs7897c3M4swYNkwuzv7PkySXhWBBOAGO6GUJYYeYhzvRC7sL18qX7h5mB9lZlPIeiHP3mC7NcLc+3k7nDziImTAcQ0hoBOU1Y07hmh3hAggVYgOl7cPdupCqasDVO/DW3gCEeW9+wrV/DOiubUYKAdCMVyicMhHZ2amV424al5DA6P4f31KYhkdyjkvDGIVxpZFB4zGBqdxMhMBMGipDmW3zPmQbn0gftLqxnRcYZ7cBvTpKjBCEBHVy861UMBbFUOVSn50NM3gOm1GAoPGTxnkvCFKMsEyv6LmEbkhYWcdKP9oZHJ4GI6QPAVuZ2l28kFrF8/ufxi7CzMkYRddBzeQpuo1O3r0f3LugZVYzhBiyhf1cZsuyJcw60VTaiFeJNiJ0ux821UI60jZZmq80gcPhVU8SSVKtrSX/dnuZG9FgbLiroCDHUcJn5E8kTIqlaXLn/C1vmv9/sGidic8hFJawAAAAAASUVORK5CYII=" alt="icon_brownarrow" >
                   <span class="ms-2 text-white">南部</span>
-                </div>
+                </a>
               </div>
 
-              <div class="chooseEast">
+              <a href="#" class="chooseEast" style="text-decoration: none;">
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGqSURBVHgBrZU9SwNBEIbfmSh+NFooWF4ELVXERhC0svEzrWg8/4F2xiax8ezUX+CpYBu/8gMCKSwDWohNoqSxkVQaCN64e9EQw+W4JD5wLLs7897c3M4swYNkwuzv7PkySXhWBBOAGO6GUJYYeYhzvRC7sL18qX7h5mB9lZlPIeiHP3mC7NcLc+3k7nDziImTAcQ0hoBOU1Y07hmh3hAggVYgOl7cPdupCqasDVO/DW3gCEeW9+wrV/DOiubUYKAdCMVyicMhHZ2amV424al5DA6P4f31KYhkdyjkvDGIVxpZFB4zGBqdxMhMBMGipDmW3zPmQbn0gftLqxnRcYZ7cBvTpKjBCEBHVy861UMBbFUOVSn50NM3gOm1GAoPGTxnkvCFKMsEyv6LmEbkhYWcdKP9oZHJ4GI6QPAVuZ2l28kFrF8/ufxi7CzMkYRddBzeQpuo1O3r0f3LugZVYzhBiyhf1cZsuyJcw60VTaiFeJNiJ0ux821UI60jZZmq80gcPhVU8SSVKtrSX/dnuZG9FgbLiroCDHUcJn5E8kTIqlaXLn/C1vmv9/sGidic8hFJawAAAAAASUVORK5CYII=" alt="icon_brownarrow" >
                 <span class="ms-2 text-white">東部</span>
-              </div>
+              </a>
             </div>
             
           </div>
 
           <!-- 依類型區塊 -->
-          <div class="col-xl-5 mt-116">
+          <div class="col-xl-5 mt-116"  data-aos="fade-left">
             <div class="d-flex justify-content-end">
               <img src="/Taiwan-I-see/assets/icon_map-0422d09c.png" alt="icon_map">
               <img class="ms-5" src="/Taiwan-I-see/assets/icon_camera-f5cdcda0.png" alt="icon_camera">
@@ -222,6 +248,7 @@
       <h2 class="mb-1 text-primary">熱門收藏景點</h2>
       <p class="mb-0" style="color:#B4875E;">Best Tourist Attractions</p>
 
+      <!-- 輪播 -->
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 
         <div class="carousel-indicators top-100 mt-5">
@@ -231,111 +258,9 @@
         </div>
 
         <div class="carousel-inner">
-             <!-- 第一頁 -->         
+
+          <!-- 第一頁 -->
           <div class="carousel-item active">
-            <div class="row justify-content-between mt-32">
-
-              <div class="col-xl-3">
-                <div class="d-flex p-3 position-relative" style="background-image:url(/Taiwan-I-see/assets/椬梧滯洪池-1-3d0bafd2.jpeg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
-      
-                  <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBzVPLcYMwEJXABeAOSAcYOHCUO4g7SAdJBzYVOB1AB04qiAvgow5CCR448svbDPZgjWSfPOOd2UH70e57u4KxR0oURS7prRyuOoQQTl3X75zzD5inye3ATruui6WUp3m+pXZsmqZE8rLv+5c8z/8V59U4jkvbtkvP8xxmkiAIkjAMdzfin9CDFsHE9RUwU1MBINkRyzmKxfmAiy6gg6KsyKYkgjxdXBF3UiA4wi/g/roqMAwDFaiUpi67IxcKqCqJwtmmbtQZRdfK5D3LsiptNcD7wRAFM4jv+2/I+dUiIEG3GOtKdKuiISO+RTw2Fsiy7IjPN+gc1AJt2+4pVhRFyu4JUaE3MYO+BbVSl7vQOTG8DVDQPPbYDsPQBNa81uVyZpDpHSTg7eDyRv0Hnkf+APeHiO50KhCQAAAAAElFTkSuQmCC" alt="icon_location16" style="width: 16px;height: 16px;">
-                    <p class="mb-0 ms-1">雲林縣 口湖鄉</p>
-                  </div>
-                  
-                  <div class="ms-auto">
-                    
-<div class="heartcontainer">
-    <span class="heart"></span>
-  </div>                  </div>
-                </div>
-                <h5 class="mt-12 mb-2">椬梧滯洪池</h5>
-                <div class="d-flex justify-content-between">
-                  <p class="mb-0"> 8899人收藏</p>
-                  <div>
-    <a class="text-decoration-none text-success" href="#">瀏覽更多 
-        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
-    </a>
-</div>                </div>
-              </div>
-      
-              <div class="col-xl-3">
-                <div class="d-flex p-3 position-relative" style="background-image:url(/Taiwan-I-see/assets/四八坑道-1-b4629e78.jpg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
-      
-                  <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBzVPLcYMwEJXABeAOSAcYOHCUO4g7SAdJBzYVOB1AB04qiAvgow5CCR448svbDPZgjWSfPOOd2UH70e57u4KxR0oURS7prRyuOoQQTl3X75zzD5inye3ATruui6WUp3m+pXZsmqZE8rLv+5c8z/8V59U4jkvbtkvP8xxmkiAIkjAMdzfin9CDFsHE9RUwU1MBINkRyzmKxfmAiy6gg6KsyKYkgjxdXBF3UiA4wi/g/roqMAwDFaiUpi67IxcKqCqJwtmmbtQZRdfK5D3LsiptNcD7wRAFM4jv+2/I+dUiIEG3GOtKdKuiISO+RTw2Fsiy7IjPN+gc1AJt2+4pVhRFyu4JUaE3MYO+BbVSl7vQOTG8DVDQPPbYDsPQBNa81uVyZpDpHSTg7eDyRv0Hnkf+APeHiO50KhCQAAAAAElFTkSuQmCC" alt="icon_location16" style="width: 16px;height: 16px;">
-                    <p class="mb-0 ms-1">花蓮縣 花蓮市</p>
-                  </div>
-                  
-                  <div class="ms-auto">
-                    
-<div class="heartcontainer">
-    <span class="heart"></span>
-  </div>                  </div>
-                </div>
-                <h5 class="mt-12 mb-2">四八坑道</h5>
-                <div class="d-flex justify-content-between">
-                  <p class="mb-0"> 8899人收藏</p>
-                  <div>
-    <a class="text-decoration-none text-success" href="#">瀏覽更多 
-        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
-    </a>
-</div>                </div>
-              </div>
-      
-              <div class="col-xl-3">
-                <div class="d-flex p-3 position-relative" style="background-image:url(/Taiwan-I-see/assets/北甲宮夜市-1-50fd212e.jpeg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
-      
-                  <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBzVPLcYMwEJXABeAOSAcYOHCUO4g7SAdJBzYVOB1AB04qiAvgow5CCR448svbDPZgjWSfPOOd2UH70e57u4KxR0oURS7prRyuOoQQTl3X75zzD5inye3ATruui6WUp3m+pXZsmqZE8rLv+5c8z/8V59U4jkvbtkvP8xxmkiAIkjAMdzfin9CDFsHE9RUwU1MBINkRyzmKxfmAiy6gg6KsyKYkgjxdXBF3UiA4wi/g/roqMAwDFaiUpi67IxcKqCqJwtmmbtQZRdfK5D3LsiptNcD7wRAFM4jv+2/I+dUiIEG3GOtKdKuiISO+RTw2Fsiy7IjPN+gc1AJt2+4pVhRFyu4JUaE3MYO+BbVSl7vQOTG8DVDQPPbYDsPQBNa81uVyZpDpHSTg7eDyRv0Hnkf+APeHiO50KhCQAAAAAElFTkSuQmCC" alt="icon_location16" style="width: 16px;height: 16px;">
-                    <p class="mb-0 ms-1">澎湖縣 馬公市</p>
-                  </div>
-                  
-                  <div class="ms-auto">
-                    
-<div class="heartcontainer">
-    <span class="heart"></span>
-  </div>                  </div>
-                </div>
-                <h5 class="mt-12 mb-2">北甲宮夜市</h5>
-                <div class="d-flex justify-content-between">
-                  <p class="mb-0"> 8653人收藏</p>
-                  <div>
-    <a class="text-decoration-none text-success" href="#">瀏覽更多 
-        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
-    </a>
-</div>                </div>
-              </div>
-      
-              <div class="col-xl-3">
-                <div class="d-flex p-3 position-relative" style="background-image:url(/Taiwan-I-see/assets/賽夏族矮靈祭-1-3a445537.jpg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
-      
-                  <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBzVPLcYMwEJXABeAOSAcYOHCUO4g7SAdJBzYVOB1AB04qiAvgow5CCR448svbDPZgjWSfPOOd2UH70e57u4KxR0oURS7prRyuOoQQTl3X75zzD5inye3ATruui6WUp3m+pXZsmqZE8rLv+5c8z/8V59U4jkvbtkvP8xxmkiAIkjAMdzfin9CDFsHE9RUwU1MBINkRyzmKxfmAiy6gg6KsyKYkgjxdXBF3UiA4wi/g/roqMAwDFaiUpi67IxcKqCqJwtmmbtQZRdfK5D3LsiptNcD7wRAFM4jv+2/I+dUiIEG3GOtKdKuiISO+RTw2Fsiy7IjPN+gc1AJt2+4pVhRFyu4JUaE3MYO+BbVSl7vQOTG8DVDQPPbYDsPQBNa81uVyZpDpHSTg7eDyRv0Hnkf+APeHiO50KhCQAAAAAElFTkSuQmCC" alt="icon_location16" style="width: 16px;height: 16px;">
-                    <p class="mb-0 ms-1">新竹縣 五峰鄉</p>
-                  </div>
-                  
-                  <div class="ms-auto">
-                    
-<div class="heartcontainer">
-    <span class="heart"></span>
-  </div>                  </div>
-                </div>
-                <h5 class="mt-12 mb-2">賽夏族矮靈祭</h5>
-                <div class="d-flex justify-content-between">
-                  <p class="mb-0"> 6974人收藏</p>
-                  <div>
-    <a class="text-decoration-none text-success" href="#">瀏覽更多 
-        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
-    </a>
-</div>                </div>
-              </div>
-              
-            </div>
-          </div>
-
-            <!-- 第二頁 -->
-          <div class="carousel-item">
             <div class="row justify-content-between mt-32">
 
               <div class="col-xl-3">
@@ -354,7 +279,7 @@
                 </div>
                 <h5 class="mt-12 mb-2">野柳地質公園</h5>
                 <div class="d-flex justify-content-between">
-                  <p class="mb-0"> 6576人收藏</p>
+                  <p class="mb-0"> 8899人收藏</p>
                   <div>
     <a class="text-decoration-none text-success" href="#">瀏覽更多 
         <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
@@ -378,7 +303,7 @@
                 </div>
                 <h5 class="mt-12 mb-2">光隆博物館</h5>
                 <div class="d-flex justify-content-between">
-                  <p class="mb-0"> 5874人收藏</p>
+                  <p class="mb-0"> 8745人收藏</p>
                   <div>
     <a class="text-decoration-none text-success" href="#">瀏覽更多 
         <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
@@ -402,7 +327,7 @@
                 </div>
                 <h5 class="mt-12 mb-2">梅山太平老街</h5>
                 <div class="d-flex justify-content-between">
-                  <p class="mb-0"> 5687人收藏</p>
+                  <p class="mb-0"> 7062人收藏</p>
                   <div>
     <a class="text-decoration-none text-success" href="#">瀏覽更多 
         <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
@@ -426,7 +351,7 @@
                 </div>
                 <h5 class="mt-12 mb-2">東勢客家文化園區</h5>
                 <div class="d-flex justify-content-between">
-                  <p class="mb-0"> 4656人收藏</p>
+                  <p class="mb-0"> 6311人收藏</p>
                   <div>
     <a class="text-decoration-none text-success" href="#">瀏覽更多 
         <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
@@ -436,6 +361,111 @@
               
             </div>
           </div>
+
+          <!-- 第二頁 -->         
+          <div class="carousel-item">
+            <div class="row justify-content-between mt-32">
+
+              <div class="col-xl-3">
+                <div class="d-flex p-3 position-relative" style="background-image:url(/Taiwan-I-see/assets/椬梧滯洪池-1-3d0bafd2.jpeg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
+      
+                  <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBzVPLcYMwEJXABeAOSAcYOHCUO4g7SAdJBzYVOB1AB04qiAvgow5CCR448svbDPZgjWSfPOOd2UH70e57u4KxR0oURS7prRyuOoQQTl3X75zzD5inye3ATruui6WUp3m+pXZsmqZE8rLv+5c8z/8V59U4jkvbtkvP8xxmkiAIkjAMdzfin9CDFsHE9RUwU1MBINkRyzmKxfmAiy6gg6KsyKYkgjxdXBF3UiA4wi/g/roqMAwDFaiUpi67IxcKqCqJwtmmbtQZRdfK5D3LsiptNcD7wRAFM4jv+2/I+dUiIEG3GOtKdKuiISO+RTw2Fsiy7IjPN+gc1AJt2+4pVhRFyu4JUaE3MYO+BbVSl7vQOTG8DVDQPPbYDsPQBNa81uVyZpDpHSTg7eDyRv0Hnkf+APeHiO50KhCQAAAAAElFTkSuQmCC" alt="icon_location16" style="width: 16px;height: 16px;">
+                    <p class="mb-0 ms-1">雲林縣 口湖鄉</p>
+                  </div>
+                  
+                  <div class="ms-auto">
+                    
+<div class="heartcontainer">
+    <span class="heart"></span>
+  </div>                  </div>
+                </div>
+                <h5 class="mt-12 mb-2">椬梧滯洪池</h5>
+                <div class="d-flex justify-content-between">
+                  <p class="mb-0"> 5899人收藏</p>
+                  <div>
+    <a class="text-decoration-none text-success" href="#">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+</div>                </div>
+              </div>
+      
+              <div class="col-xl-3">
+                <div class="d-flex p-3 position-relative" style="background-image:url(/Taiwan-I-see/assets/四八坑道-1-b4629e78.jpg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
+      
+                  <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBzVPLcYMwEJXABeAOSAcYOHCUO4g7SAdJBzYVOB1AB04qiAvgow5CCR448svbDPZgjWSfPOOd2UH70e57u4KxR0oURS7prRyuOoQQTl3X75zzD5inye3ATruui6WUp3m+pXZsmqZE8rLv+5c8z/8V59U4jkvbtkvP8xxmkiAIkjAMdzfin9CDFsHE9RUwU1MBINkRyzmKxfmAiy6gg6KsyKYkgjxdXBF3UiA4wi/g/roqMAwDFaiUpi67IxcKqCqJwtmmbtQZRdfK5D3LsiptNcD7wRAFM4jv+2/I+dUiIEG3GOtKdKuiISO+RTw2Fsiy7IjPN+gc1AJt2+4pVhRFyu4JUaE3MYO+BbVSl7vQOTG8DVDQPPbYDsPQBNa81uVyZpDpHSTg7eDyRv0Hnkf+APeHiO50KhCQAAAAAElFTkSuQmCC" alt="icon_location16" style="width: 16px;height: 16px;">
+                    <p class="mb-0 ms-1">花蓮縣 花蓮市</p>
+                  </div>
+                  
+                  <div class="ms-auto">
+                    
+<div class="heartcontainer">
+    <span class="heart"></span>
+  </div>                  </div>
+                </div>
+                <h5 class="mt-12 mb-2">四八坑道</h5>
+                <div class="d-flex justify-content-between">
+                  <p class="mb-0"> 3470人收藏</p>
+                  <div>
+    <a class="text-decoration-none text-success" href="#">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+</div>                </div>
+              </div>
+      
+              <div class="col-xl-3">
+                <div class="d-flex p-3 position-relative" style="background-image:url(/Taiwan-I-see/assets/北甲宮夜市-1-50fd212e.jpeg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
+      
+                  <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBzVPLcYMwEJXABeAOSAcYOHCUO4g7SAdJBzYVOB1AB04qiAvgow5CCR448svbDPZgjWSfPOOd2UH70e57u4KxR0oURS7prRyuOoQQTl3X75zzD5inye3ATruui6WUp3m+pXZsmqZE8rLv+5c8z/8V59U4jkvbtkvP8xxmkiAIkjAMdzfin9CDFsHE9RUwU1MBINkRyzmKxfmAiy6gg6KsyKYkgjxdXBF3UiA4wi/g/roqMAwDFaiUpi67IxcKqCqJwtmmbtQZRdfK5D3LsiptNcD7wRAFM4jv+2/I+dUiIEG3GOtKdKuiISO+RTw2Fsiy7IjPN+gc1AJt2+4pVhRFyu4JUaE3MYO+BbVSl7vQOTG8DVDQPPbYDsPQBNa81uVyZpDpHSTg7eDyRv0Hnkf+APeHiO50KhCQAAAAAElFTkSuQmCC" alt="icon_location16" style="width: 16px;height: 16px;">
+                    <p class="mb-0 ms-1">澎湖縣 馬公市</p>
+                  </div>
+                  
+                  <div class="ms-auto">
+                    
+<div class="heartcontainer">
+    <span class="heart"></span>
+  </div>                  </div>
+                </div>
+                <h5 class="mt-12 mb-2">北甲宮夜市</h5>
+                <div class="d-flex justify-content-between">
+                  <p class="mb-0"> 2653人收藏</p>
+                  <div>
+    <a class="text-decoration-none text-success" href="#">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+</div>                </div>
+              </div>
+      
+              <div class="col-xl-3">
+                <div class="d-flex p-3 position-relative" style="background-image:url(/Taiwan-I-see/assets/賽夏族矮靈祭-1-3a445537.jpg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
+      
+                  <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBzVPLcYMwEJXABeAOSAcYOHCUO4g7SAdJBzYVOB1AB04qiAvgow5CCR448svbDPZgjWSfPOOd2UH70e57u4KxR0oURS7prRyuOoQQTl3X75zzD5inye3ATruui6WUp3m+pXZsmqZE8rLv+5c8z/8V59U4jkvbtkvP8xxmkiAIkjAMdzfin9CDFsHE9RUwU1MBINkRyzmKxfmAiy6gg6KsyKYkgjxdXBF3UiA4wi/g/roqMAwDFaiUpi67IxcKqCqJwtmmbtQZRdfK5D3LsiptNcD7wRAFM4jv+2/I+dUiIEG3GOtKdKuiISO+RTw2Fsiy7IjPN+gc1AJt2+4pVhRFyu4JUaE3MYO+BbVSl7vQOTG8DVDQPPbYDsPQBNa81uVyZpDpHSTg7eDyRv0Hnkf+APeHiO50KhCQAAAAAElFTkSuQmCC" alt="icon_location16" style="width: 16px;height: 16px;">
+                    <p class="mb-0 ms-1">新竹縣 五峰鄉</p>
+                  </div>
+                  
+                  <div class="ms-auto">
+                    
+<div class="heartcontainer">
+    <span class="heart"></span>
+  </div>                  </div>
+                </div>
+                <h5 class="mt-12 mb-2">賽夏族矮靈祭</h5>
+                <div class="d-flex justify-content-between">
+                  <p class="mb-0"> 1974人收藏</p>
+                  <div>
+    <a class="text-decoration-none text-success" href="#">瀏覽更多 
+        <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
+    </a>
+</div>                </div>
+              </div>
+              
+            </div>
+          </div>
+
+
 
           <!-- 第三頁 -->
           <div class="carousel-item">
@@ -543,6 +573,7 @@
 
     </div>
 
+    <!-- 跑馬燈 -->
     <div style="margin-top: 76px;width: 100%;height: 200px;background-image: url(/Taiwan-I-see/assets/img_marquee_bg-21b03e26.png);background-size: cover;background-position: center center;overflow: hidden;">
 
       <div class="marqueeArea">
@@ -556,11 +587,14 @@
 
     </div>
 
+
+
     <div class="container mt-64 mb-64">
       <div class="backimage"></div>
       <h2 class="mb-1 text-primary">景點推薦</h2>
       <p class="mb-0" style="color:#B4875E;">Best Tourist Attractions</p>
       <div class="row mt-32">
+
         <div class="col-8 d-flex bg-white p-3 myRadius-24">
           <img class="myRadius-24" src="/Taiwan-I-see/assets/首頁＿九份-da8c2a4f.png" style="width: 400px;height: 328px;	background-size: cover;
           background-position: center center;" alt="首頁＿九份">
