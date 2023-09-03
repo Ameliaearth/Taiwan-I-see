@@ -2,7 +2,8 @@
 
     <div class="container d-flex align-items-start">
         <div>
-            <a class="navbar-brand" href="index.html"><img src="../assets/images/logo＿index.png" alt="logo" width="94" height="140"></a>
+          <!-- 未登入會員頁面JS排除連結 -->
+            <a class="exclude navbar-brand" href="index.html"><img src="../assets/images/logo＿index.png" alt="logo" width="94" height="140"></a>
         </div>
 
          <!-- 切換用，開發完成後刪掉 -->
@@ -32,12 +33,14 @@
                 <a class="nav-link fw-bold" href="not-logged.html">我的收藏</a>
               </li>
     
+              <!-- 未登入會員頁面JS排除連結 -->
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="log-in.html">登入會員</a>
+                <a class="exclude nav-link fw-bold" href="log-in.html">登入會員</a>
               </li>
     
+              <!-- 未登入會員頁面JS排除連結 -->
               <li class="nav-item borderPill d-flex justify-content-center">
-                <a class="nav-link fw-bold" href="sign-up.html">加入會員<img src="../assets/images/icon_chevron_right.png" alt="icon_chevron_right"></a>
+                <a class="exclude nav-link fw-bold" href="sign-up.html">加入會員<img src="../assets/images/icon_chevron_right.png" alt="icon_chevron_right"></a>
               </li>
     
             </ul>
