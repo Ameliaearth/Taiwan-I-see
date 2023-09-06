@@ -29,13 +29,6 @@
             <a class="navbar-brand" href="index-logged.html"></a>
         </div>
 
-         <!-- 切換用，開發完成後刪掉 -->
-        <ul>
-          <li><a href="attractions.html">2-1頁面</a></li>
-          <li><a href="hot attractions.html">附近熱門景點</a></li>
-          <li><a href="list-schedule.html">7-1頁面</a></li>
-        </ul>
-         <!-- 切換用，開發完成後刪掉 -->
 
          
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,14 +79,18 @@
     <div class="flex-column flex-md-row d-flex justify-content-center">
         <h2 class="col-2 text-success fw-bold py-3">自訂行程</h2>
         <ul class="col-5 list-unstyled mt-2">
-            <li class="mb-3">
-                <label for="formGroupExampleInput">行程名稱</label>
-                <input class="border-2 rounded-1 border-light" id="formGroupExampleInput" type="text" placeholder="這次的行程名稱">
-            </li>
-            <li class="mb-3">
-                <label for="formGroupExampleInput2">出發日期</label>
-                <input class="border-2 rounded-1 border-light" id="formGroupExampleInput2" type="date" placeholder="這次的行程日期">
-            </li>
+            <div class="mb-3 row">
+                <label for="staticname" class="col-sm-2 col-form-label">行程名稱</label>
+                <div class="col-sm-10">
+                <input type="text" class="form-control" id="staticname" placeholder="行程名稱">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputtext" class="col-sm-2 col-form-label">出發日期</label>
+                <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputtext" placeholder="行程日期">
+                </div>
+            </div>
         </ul>
         <div class="col-5 d-flex align-items-center justify-content-end">
             <button class="btn btn-outline-danger me-2" type="button">行程修改/儲存</button>
