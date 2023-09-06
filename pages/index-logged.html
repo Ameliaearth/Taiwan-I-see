@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>Taiwan, I See.</title>
     <!-- font Anton&Inter CDN  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,15 +47,17 @@
   </script>
  
    
-    <div class="banner position-relative ">
+  <div class="banner position-relative ">
     <!-- header不一樣 -->
     <%- include('./layout/index_header-logged'); -%>
 
+    <!-- 大標區塊 -->
     <div class="container">
-      <h1 class="indexTitle">Taiwan, I see.</h1>       
+      <h1 class="indexTitle">Taiwan,<br class="indexTitlebr">
+         I see.</h1>       
 
       <!-- 此連結要到7-1 -->
-      <a href="#" class="footerContentbtn mx-auto ms-lg-0">
+      <a href="#" class="footerContentbtn">
           <div class="position-relative">
               <div class="btnUnder"></div>
 
@@ -67,6 +69,7 @@
       </a>
     </div>
 
+    <!-- 本月推薦區塊 -->
     <div class="d-flex justify-content-end">
       <!-- 膚色底區塊 -->
       <div class="monthPromotionbg bg-body">
@@ -80,11 +83,11 @@
         </div>
 
         <!-- 內容區塊 -->
-        <div class="monthPromotion d-lg-flex justify-content-between align-items-center" data-aos="fade-up">
+        <div class="monthPromotion " data-aos="fade-up">
+          
           <!-- 主圖 -->
-          <div class="monthImg">
-            <a href="#"><img src="../assets/images/this_month.png" alt="this_month"></a>
-            
+          <div class="mb-3 d-flex justify-content-center">
+            <a href="#"><img  class="monthImg" src="../assets/images/this_month.png" alt="this_month"></a>      
           </div>
 
           <!-- 標題＋內文 -->
@@ -93,13 +96,14 @@
 
             <div class="d-flex mb-12">
               <img class="" src="../assets/images/icon_location.png" alt="icon_location" style="height: 20px">
-              <p class="mb-0 ms-1">桃園市新屋區中正路110巷</p>
+              <p class="mb-0 ms-1" style="color: #B4875E;">桃園市新屋區中正路110巷</p>
             </div>
             
-            <p class="mb-40">范姜老屋群是一個古老而迷人的文化遺址，充滿歷史價值和獨特魅力。這個老屋群以其保存完整的傳統建築風格而聞名，展示了過去的生活方式和建築工藝。在這裡，您可以漫步於古老的巷道，欣賞傳統中國建築的精湛細節，並感受悠久的歷史氛圍。范姜老屋群也常舉辦文化活動和展覽，讓遊客更深入了解當地的文化傳承和歷史故事。</p>
-            <!-- 這邊須再引用瀏覽更多按鈕的ＥＪＳ -->
-            <!-- 這邊須再引用瀏覽更多按鈕的ＥＪＳ -->
-            <!-- 這邊須再引用瀏覽更多按鈕的ＥＪＳ -->
+            <p class="mb-4" style="font-size: 16px;line-height: 1.5;letter-spacing:0.02em;">范姜老屋群是一個古老而迷人的文化遺址，充滿歷史價值和獨特魅力。這個老屋群以其保存完整的傳統建築風格而聞名，展示了過去的生活方式和建築工藝。在這裡，您可以漫步於古老的巷道，欣賞傳統中國建築的精湛細節，並感受悠久的歷史氛圍。范姜老屋群也常舉辦文化活動和展覽，讓遊客更深入了解當地的文化傳承和歷史故事。</p>
+            <div class="d-flex justify-content-end">
+              <%- include('./layout/browse'); -%>
+            </div>
+            
           </div>
 
         </div>
@@ -107,7 +111,7 @@
       </div>
     </div>
     
-
+    <!-- 直接找景點區塊 -->
     <div class="container chooseType">
 
 
@@ -115,8 +119,8 @@
         <!-- 依地區區塊 -->
         <div class="col-xl-6"  data-aos="fade-right">
 
-          <h2 class="mb-1 text-primary">直接找景點</h2>
-          <p class="mb-0" style="color:#B4875E;">Choose Your Type</p>
+          <h2 class="mb-1 text-primary" style="font-size: 48px;line-height: 1.2;">直接找景點</h2>
+          <p class="mb-0" style="color:#B4875E;font-size: 18px;line-height: 1.2;">Choose Your Type</p>
           <div class="d-flex mb-12 mt-32 align-items-center">
             <img src="../assets/images/line_40.png" alt="line_40" style="width: 40px;height: 1px;">
             <p class="text-white mb-0 ms-12" >依地區</p>
@@ -157,28 +161,28 @@
         </div>
 
         <!-- 依類型區塊 -->
-        <div class="col-xl-5 mt-116"  data-aos="fade-left">
+        <div class="col-xl-5 myMt"  data-aos="fade-left">
           <div class="d-flex justify-content-end">
-            <img src="../assets/images/icon_map.png" alt="icon_map">
-            <img class="ms-5" src="../assets/images/icon_camera.png" alt="icon_camera">
+            <img class=" d-none d-xl-block" src="../assets/images/icon_map.png" alt="icon_map">
+            <img class="ms-5 d-none d-xl-block" src="../assets/images/icon_camera.png" alt="icon_camera">
           </div>
 
           <div class="d-flex mb-12 mt-12 align-items-center">
-            <img src="../assets/images/line_40.png" alt="line_40" style="width: 40px;height: 1px;">
-            <p class="text-white mb-0 ms-12" >依類型</p>
+            <div class="lineImg"></div>
+            <p class="textColor mb-0 ms-12" >依類型</p>
           </div>
           
           <div class="myRadius-24 bg-white shadow pt-4 pb-44 ps-4 pe-4">
             <img src="../assets/images/icon_mark.png" alt="icon_mark">
-            <div class="chooseCulture d-flex flex-wrap justify-content-between">
-              <a href="#" class="btn bg-light rounded-pill mb-3" style="width: 116px;background-color: #E9E9E9!important"> <span class="me-2">#</span> 特色夜市</a>
-              <a href="#" class="btn bg-light rounded-pill mb-3" style="width: 116px;background-color: #E9E9E9!important"> <span class="me-2">#</span> 老街漫遊</a>
-              <a href="#" class="btn bg-light rounded-pill mb-3" style="width: 116px;background-color: #E9E9E9!important"> <span class="me-2">#</span> 古蹟巡禮</a>
-              <a href="#" class="btn bg-light rounded-pill mb-3" style="width: 116px;background-color: #E9E9E9!important"> <span class="me-2">#</span> 博物館別</a>
-              <a href="#" class="btn bg-light rounded-pill mb-3" style="width: 116px;background-color: #E9E9E9!important"> <span class="me-2">#</span> 戰地文化</a>
-              <a href="#" class="btn bg-light rounded-pill mb-3" style="width: 116px;background-color: #E9E9E9!important"> <span class="me-2">#</span> 原民文化</a>
-              <a href="#" class="btn bg-light rounded-pill mb-3" style="width: 116px;background-color: #E9E9E9!important"> <span class="me-2">#</span> 客家文化</a>
-              <a href="#" class="btn bg-light rounded-pill mb-3" style="width: 116px;background-color: #E9E9E9!important"> <span class="me-2">#</span> 山明水秀</a>
+            <div class="chooseCulture d-flex flex-wrap ">
+              <a href="#" class="btn bg-light rounded-pill mb-3" style="background-color: #E9E9E9!important"> <span class="me-2">#</span> 特色夜市</a>
+              <a href="#" class="btn bg-light rounded-pill mb-3" style="background-color: #E9E9E9!important"> <span class="me-2">#</span> 老街漫遊</a>
+              <a href="#" class="btn bg-light rounded-pill mb-3" style="background-color: #E9E9E9!important"> <span class="me-2">#</span> 古蹟巡禮</a>
+              <a href="#" class="btn bg-light rounded-pill mb-3" style="background-color: #E9E9E9!important"> <span class="me-2">#</span> 博物館別</a>
+              <a href="#" class="btn bg-light rounded-pill mb-3" style="background-color: #E9E9E9!important"> <span class="me-2">#</span> 戰地文化</a>
+              <a href="#" class="btn bg-light rounded-pill mb-3" style="background-color: #E9E9E9!important"> <span class="me-2">#</span> 原民文化</a>
+              <a href="#" class="btn bg-light rounded-pill mb-3" style="background-color: #E9E9E9!important"> <span class="me-2">#</span> 客家文化</a>
+              <a href="#" class="btn bg-light rounded-pill mb-3" style="background-color: #E9E9E9!important"> <span class="me-2">#</span> 山明水秀</a>
             </div>
           </div>
         </div>
@@ -188,19 +192,20 @@
     </div>
 
     <!-- 波浪底圖 -->
-    <div class="imgType bottom-0"></div>
+    <div class="imgType bottom-0" style="margin-bottom: -2px;"></div>
   
   </div>
 
+  <div class="blankArea"></div>
 
-  <div class="container mt-124 pb-5" style="background-image: url('../assets/images/sliper.png')">
-    <h2 class="mb-1 text-primary">熱門收藏景點</h2>
-    <p class="mb-0" style="color:#B4875E;">Best Tourist Attractions</p>
+  <div class="container mt-124 pb-5 backgroundSliper">
+    <h2 class="mb-1 text-primary" style="font-size: 48px;line-height: 1.2;">熱門收藏景點</h2>
+    <p class="mb-0" style="color:#B4875E;font-size: 18px;line-height: 1.2;">Best Tourist Attractions</p>
 
     <!-- 輪播 -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 
-      <div class="carousel-indicators top-100 mt-5">
+      <div class="carousel-indicators top-100 mt-xl-5">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -212,7 +217,7 @@
         <div class="carousel-item active">
           <div class="row justify-content-between mt-32">
 
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-6 mb-5">
               <div class="d-flex p-3 position-relative" style="background-image:url(../assets/images/野柳地質公園-1.jpg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
     
                 <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
@@ -231,7 +236,7 @@
               </div>
             </div>
     
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-6  mb-5">
               <div class="d-flex p-3 position-relative" style="background-image:url(../assets/images/光隆博物館-1.png);height: 312px;width: 100%;background-size: cover;background-position: center center;">
     
                 <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
@@ -250,7 +255,7 @@
               </div>
             </div>
     
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-6  mb-5">
               <div class="d-flex p-3 position-relative" style="background-image:url(../assets/images/梅山太平老街-1.jpeg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
     
                 <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
@@ -269,7 +274,7 @@
               </div>
             </div>
     
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-6  mb-5">
               <div class="d-flex p-3 position-relative" style="background-image:url(../assets/images/東勢客家文化園區-1.jpeg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
     
                 <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
@@ -295,7 +300,7 @@
         <div class="carousel-item">
           <div class="row justify-content-between mt-32">
 
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-6  mb-5">
               <div class="d-flex p-3 position-relative" style="background-image:url(../assets/images/椬梧滯洪池-1.jpeg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
     
                 <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
@@ -314,7 +319,7 @@
               </div>
             </div>
 
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-6  mb-5">
               <div class="d-flex p-3 position-relative" style="background-image:url(../assets/images/蘭嶼-1.jpeg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
     
                 <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
@@ -333,7 +338,7 @@
               </div>
             </div>
     
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-6  mb-5">
               <div class="d-flex p-3 position-relative" style="background-image:url(../assets/images/四八坑道-1.jpg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
     
                 <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
@@ -352,7 +357,7 @@
               </div>
             </div>
     
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-6  mb-5">
               <div class="d-flex p-3 position-relative" style="background-image:url(../assets/images/北甲宮夜市-1.jpeg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
     
                 <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
@@ -379,7 +384,7 @@
         <div class="carousel-item">
           <div class="row justify-content-between mt-32">
 
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-6  mb-5">
               <div class="d-flex p-3 position-relative" style="background-image:url(../assets/images/文臺寶塔-1.jpeg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
     
                 <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
@@ -398,7 +403,7 @@
               </div>
             </div>
     
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-6  mb-5">
               <div class="d-flex p-3 position-relative" style="background-image:url(../assets/images/池上客家文化園區-1.jpg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
     
                 <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
@@ -416,7 +421,7 @@
                 <%- include('./layout/browse'); -%>
               </div>
             </div>
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-6  mb-5">
               <div class="d-flex p-3 position-relative" style="background-image:url(../assets/images/芹壁村-2.jpeg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
     
                 <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
@@ -434,7 +439,7 @@
                 <%- include('./layout/browse'); -%>
               </div>
             </div>
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-6  mb-5">
               <div class="d-flex p-3 position-relative" style="background-image:url(../assets/images/賽夏族矮靈祭-1.jpg);height: 312px;width: 100%;background-size: cover;background-position: center center;">
     
                 <div class="p-1  bg-white rounded d-flex align-items-center" style="height: 25px;">
@@ -477,10 +482,10 @@
 
 
   
-  <div class="container mt-64 mb-80" style="background-image: url('../assets/images/leaves.png');">
+  <div class="container mt-64 mb-80 backgroundLeaves">
     <div class="backimage"></div>
-    <h2 class="mb-1 text-primary">景點推薦</h2>
-    <p class="mb-0" style="color:#B4875E;">Best Tourist Attractions</p>
+    <h2 class="mb-1 text-primary" style="font-size: 48px;line-height: 1.2;">景點推薦</h2>
+    <p class="mb-0" style="color:#B4875E;font-size: 18px;line-height: 1.2;">Best Tourist Attractions</p>
 
     <!-- 景點推薦輪播 -->
     <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
@@ -496,11 +501,11 @@
         <!-- 第一頁 -->
         <div class="container carousel-item active" data-bs-interval="10000">
           <div class="row mt-3">
-            <div class="col-8 d-flex bg-white p-3 myRadius-24" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);"  data-aos="fade-right">
-              <img class="myRadius-24" src="../assets/images/首頁＿九份.png" style="width: 400px;height: 328px;	background-size: cover;
+            <div class="col-xxl-8 col-md-10 d-lg-flex justify-content-between bg-white p-3 myRadius-24" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);"  data-aos="fade-right">
+              <img class="myRadius-24 rwdWitdth" src="../assets/images/首頁＿九份.png" style="height: 328px;	background-size: cover;
               background-position: center center;" alt="首頁＿九份">
     
-              <div class="ms-4 pt-2 pe-1 pb-2 ps-1 d-flex flex-column">
+              <div class="pt-2 pe-1 pb-2 ps-1 d-flex flex-column rwdWitdth">
     
                 <div class="d-flex justify-content-between mb-12">
                   <div>
@@ -543,11 +548,11 @@
     
             </div>
     
-            <div class="col-8 ms-auto mt-4 d-flex bg-white p-3 myRadius-24"  style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);"  data-aos="fade-left">
-              <img class="myRadius-24" src="../assets/images/首頁＿鹿港.png" style="width: 400px;height: 328px;	background-size: cover;
+            <div class="col-xxl-8 col-md-10 ms-auto mt-4 d-lg-flex bg-white p-3 myRadius-24 justify-content-between"  style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);"  data-aos="fade-left">
+              <img class="myRadius-24 rwdWitdth" src="../assets/images/首頁＿鹿港.png" style="height: 328px;	background-size: cover;
               background-position: center center;" alt="首頁＿鹿港">
     
-              <div class="ms-4 pt-2 pe-1 pb-2 ps-1 d-flex flex-column">
+              <div class="rwdWitdth pt-2 pe-1 pb-2 ps-1 d-flex flex-column">
     
                 <div class="d-flex justify-content-between mb-12">
                   <div>
@@ -595,10 +600,10 @@
         <!-- 第二頁 -->
         <div class="container carousel-item">
           <div class="row mt-3">
-            <div class="col-8 d-flex bg-white p-3 myRadius-24" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);">
-              <img class="myRadius-24" src="../assets/images/羅娜部落-2.jpeg" style="width: 400px;height: 328px;	background-size: cover;background-position: center center;" alt="羅娜部落-2">
+            <div class="col-xxl-8 col-md-10 d-lg-flex bg-white p-3 myRadius-24 justify-content-between" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);">
+              <img class="myRadius-24  rwdWitdth" src="../assets/images/羅娜部落-2.jpeg" style="height: 328px;	background-size: cover;background-position: center center;" alt="羅娜部落-2">
     
-              <div class="ms-4 pt-2 pe-1 pb-2 ps-1 d-flex flex-column">
+              <div class="rwdWitdth pt-2 pe-1 pb-2 ps-1 d-flex flex-column">
     
                 <div class="d-flex justify-content-between mb-12">
                   <div>
@@ -641,11 +646,11 @@
     
             </div>
     
-            <div class="col-8 ms-auto mt-4 d-flex bg-white p-3 myRadius-24"  style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);">
-              <img class="myRadius-24" src="../assets/images/國立科學工藝博物館-3.jpg" style="width: 400px;height: 328px;	background-size: cover;
+            <div class="col-xxl-8 col-md-10 ms-auto mt-4 d-lg-flex bg-white p-3 myRadius-24 justify-content-between"  style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);">
+              <img class="myRadius-24  rwdWitdth" src="../assets/images/國立科學工藝博物館-3.jpg" style="height: 328px;	background-size: cover;
               background-position: center center;" alt="國立科學工藝博物館-3">
     
-              <div class="ms-4 pt-2 pe-1 pb-2 ps-1 d-flex flex-column">
+              <div class="rwdWitdth pt-2 pe-1 pb-2 ps-1 d-flex flex-column">
     
                 <div class="d-flex justify-content-between mb-12">
                   <div>
@@ -690,11 +695,11 @@
         <!-- 第三頁 -->
         <div class="container carousel-item">
           <div class="row mt-3">
-            <div class="col-8 d-flex bg-white p-3 myRadius-24" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);">
-              <img class="myRadius-24" src="../assets/images/金門歷史民俗博物館-1.jpeg" style="width: 400px;height: 328px;	background-size: cover;
+            <div class="col-xxl-8 col-md-10 d-lg-flex bg-white p-3 myRadius-24 justify-content-between" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);">
+              <img class="myRadius-24 rwdWitdth" src="../assets/images/金門歷史民俗博物館-1.jpeg" style="height: 328px;	background-size: cover;
               background-position: center center;" alt="金門歷史民俗博物館-1">
     
-              <div class="ms-4 pt-2 pe-1 pb-2 ps-1 d-flex flex-column">
+              <div class="rwdWitdth pt-2 pe-1 pb-2 ps-1 d-flex flex-column">
     
                 <div class="d-flex justify-content-between mb-12">
                   <div>
@@ -737,11 +742,11 @@
     
             </div>
     
-            <div class="col-8 ms-auto mt-4 d-flex bg-white p-3 myRadius-24"  style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);">
-              <img class="myRadius-24" src="../assets/images/中央老街-1.jpg" style="width: 400px;height: 328px;	background-size: cover;
+            <div class="col-xxl-8 col-md-10 ms-auto mt-4 d-lg-flex bg-white p-3 myRadius-24 justify-content-between"  style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);">
+              <img class="myRadius-24  rwdWitdth" src="../assets/images/中央老街-1.jpg" style="height: 328px;	background-size: cover;
               background-position: center center;" alt="中央老街-1">
     
-              <div class="ms-4 pt-2 pe-1 pb-2 ps-1 d-flex flex-column">
+              <div class="rwdWitdth pt-2 pe-1 pb-2 ps-1 d-flex flex-column">
     
                 <div class="d-flex justify-content-between mb-12">
                   <div>

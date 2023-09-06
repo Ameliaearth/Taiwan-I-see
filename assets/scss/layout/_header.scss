@@ -1,3 +1,8 @@
+.navbar-toggler{
+  color: #ffffff;
+  border: none;
+}
+
 .searchArea{
   background:rgba(0,0,0,0);
   border:none;
@@ -36,3 +41,28 @@
 .borderPill a:hover{
   opacity: 1;
 }
+
+.searchArea::placeholder{
+  color:#E9E9E9;
+}
+
+.navbar-brand{
+
+  display: block;
+  background-image: url('../images/logo_header_sm.png');
+  width: 56px;
+  height: 84px;
+
+}
+
+@media(min-width:992px){
+
+  .navbar-brand{
+    display: block;
+    background-image: url('../images/logo＿index.png');
+    width: 94px;
+    height: 140px;
+  }
+}
+
+
