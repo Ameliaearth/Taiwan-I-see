@@ -8,53 +8,70 @@
     'GRAD' 0,
     'opsz' 20
 }
-/* PROGRESS TRACKER */
-  .progress-tracker {
-    display: block;
-    margin: 0;
-    counter-reset: item;
-    list-style-type: none;
-    overflow: auto;
-    position: relative;
-    width: 100%;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: .075em
-  }
-  .progress-tracker .step:before {
-    background: #aaa;
-    border-radius: 40px;
-    color: #FFFFFF;
-    content: "";
-    display: list-item;
-    font-size: 18px;
-    line-height: 1.8em;
-    padding: 0 0 0 13px;
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    content: counter(item) "  "; 
-    counter-increment: item;
-  }
-  .progress-tracker .step {
-    display: block;
-    float: left;
-    list-style-position: inside;
-    width: 33%;
-  }
-  .progress-tracker .step .step-name{
-    border-top: 8px solid #aaa;
-    display: block;
-    margin: 15px 0;
-    padding: 20px 0;
-  }
-  /*last step*/
-  .progress-tracker .step:last-child { width: auto;}
-  .progress-tracker .step:last-child .step-name{ border-color: transparent;}
-  
-  /*active step*/
-  .progress-tracker .step.active .step-name {color: #666}
-  .progress-tracker .step.active:before {background: #666;}
+.recommand-footer .my-3 svg {
+  width: 30px; /* 設定合適的寬度 */
+  height: 30px; /* 設定合適的高度 */
+}
+
+.recommand-footer .my-3 span {
+  font-size: 20px; /* 設定合適的字體大小 */
+}
+.container2 {
+  width: 100%;
+}
+
+.progressbar {
+  counter-reset: step;
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden; /* 隱藏水平溢出 */
+}
+
+.progressbar li {
+  float: left;
+  width: 16.6667%; /* 100% / 6 個項目 = 16.6667% */
+  position: relative;
+  text-align: center;
+}
+
+.progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ddd;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.progressbar li:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+
+.progressbar li:first-child:after {
+  content: none;
+}
+
+.progressbar li.active {
+  color: green;
+}
+
+.progressbar li.active:before {
+  border-color: green;
+}
+
+.progressbar li.active + li:after {
+  background-color: green;
+}
+
