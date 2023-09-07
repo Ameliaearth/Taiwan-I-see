@@ -16,7 +16,7 @@
 <!-- jquery CDN -->
 <script src="../js/code.jquery.com_jquery-3.7.1.min.js"></script>
 <script src="../js/all.js"></script>
-
+<link rel="stylesheet" href="/Taiwan-I-see/assets/main-a68aa50d.css">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
 
 <!-- nav -->
 <div class="container my-4">
-    <h2>分享我的體驗</h2>
+    <h2 class="text-primary">分享我的體驗</h2>
     <div class="recommand-footer my-2">
         <div class="my-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
@@ -44,13 +44,13 @@
         </div>
     </div>
     <!-- 上傳圖片 -->
-    <div>
-        <h2 style="display: inline;">上傳圖片</h2>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="display: inline;">
-            <button class="btn btn-danger me-md-2" type="button">載入照片</button>
-            <button class="btn btn-secondary" type="button">上傳</button>
+    <div class="my-4 d-flex justify-content-between align-items-center">
+        <h2 class="text-primary">上傳圖片</h2>
+        <div>
+            <button class="btn btn-danger me-2 rounded-pill" type="button">載入照片</button>
+            <button class="btn btn-secondary rounded-pill" type="button">上傳</button>
         </div>
-    </div>
+    </div>    
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
             <div class="card h-100">
@@ -79,20 +79,22 @@
     </div>
     <!-- 我的行程 -->
     <div>
-        <h2>我的行程</h2>
-        <div>
-            <ol class="progress-tracker">
-                <li class="step active"><span class="step-name">景點名稱</span></li>
-                <li class="step"><span class="step-name">景點名稱</span></li>
-                <li class="step"><span class="step-name">景點名稱</span></li>
-            </ol> 
+        <h2 class="my-4 text-primary">我的行程</h2>
+        <div class="row my-4">
+            <div class="container2 ">
+             <ul class="progressbar">
+              <li class="active">景點名稱</li>
+              <li>景點名稱</li>
+              <li>景點名稱</li>
+            </ul>
+          </div>
         </div>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <a href="share-message.html">
-              <button class="btn btn-danger me-md-2" type="button">留言</button>
+              <button class="btn btn-danger me-md-2 rounded-pill" type="button">留言</button>
             </a>
             <a href="share-schedule.html">
-              <button class="btn btn-secondary" type="button">取消</button>
+              <button class="btn btn-secondary rounded-pill" type="button">取消</button>
             </a>
         </div>
     </div>
