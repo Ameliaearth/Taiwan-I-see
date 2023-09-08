@@ -17,8 +17,8 @@
 <script src="../js/code.jquery.com_jquery-3.7.1.min.js"></script>
 <script src="../js/all.js"></script>
 
-  <script type="module" crossorigin src="/Taiwan-I-see/assets/main-d7647e75.js"></script>
-  <link rel="stylesheet" href="/Taiwan-I-see/assets/main-a68aa50d.css">
+  <script type="module" crossorigin src="/Taiwan-I-see/assets/main-8ae0c597.js"></script>
+  <link rel="stylesheet" href="/Taiwan-I-see/assets/main-f6b5e42f.css">
 </head>
 
 <body>
@@ -4110,23 +4110,7 @@
 
 
 
-<script>
-    $(document).ready(function() {
-    $('#filterInput').on('input', function() {
-        var filterValue = $(this).val().toLowerCase();
-        // 收索卡片
-        $('#cardContainer .jq-card').each(function() {
-            var cardText = $(this).text().toLowerCase();
-            if (cardText.includes(filterValue)) {
-                $(this).show(); // 符合條件，顯示卡片
-            } else {
-                $(this).hide(); // 不符合條件，隐藏卡片
-            }
-        });
-    });
-});
 
-</script>
 
 
 </body>
