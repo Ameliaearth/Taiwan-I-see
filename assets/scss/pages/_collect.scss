@@ -45,3 +45,13 @@
 .tab_css input:checked + label + .tab_content{
     display: initial;
 }
+
+//fixed
+.box{
+    position:relative
+}
+.fix-box{
+    position:fixed;
+    z-index:-10;
+    top:150px;
+}
