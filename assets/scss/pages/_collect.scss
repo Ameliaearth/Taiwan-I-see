@@ -9,7 +9,7 @@
     'opsz' 20
 }
 
-
+//篩選
 .tab_css{
     display:flex;
     flex-wrap:wrap;
@@ -44,6 +44,19 @@
 }
 .tab_css input:checked + label + .tab_content{
     display: initial;
+}
+
+//分頁
+#tab-demo > ul{ 
+    display:block; 
+
+}
+#tab-demo > ul > li{ 
+    display:inline-block; 
+}
+#tab-demo > ul > li.active{ 
+    border-bottom:1px solid #fff; 
+    background:#fff;
 }
 
 //fixed
