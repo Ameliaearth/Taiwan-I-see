@@ -19,9 +19,12 @@
     <%- include('./layout/header-notlog'); -%>
 
     <div class="container my-4">
-      <h2 class="text-primary fw-bold py-3">會員登入</h2>
-      <div class="row justify-content-center">
-        <div class="col-4">
+      <span class="h2 text-primary fw-bold border-bottom border-3 border-primary">會員登入</span>
+      <div class="row mt-5 justify-content-xl-evenly justify-content-center">
+        <div class="col-xl-4 d-none d-xl-block">
+          <img src="../assets/images/this_month.png" alt="this_month">
+        </div>
+        <div class="col-xl-5 col-lg-8">
           <form>
             <div class="mb-3">
               <label for="accountNumber" class="form-label">帳號</label>
@@ -41,11 +44,21 @@
               <label class="form-check-label" for="rememberCheck">保持會員登入</label>
             </div>
 
-            <a href="index-logged.html"><div type="submit" class="btn btn-primary" style="width: 100%;color: #ffffff;">登入</div></a>
+            <a href="index-logged.html"><div type="submit" class="btn btn-primary mb-4" style="width: 100%;color: #ffffff;">登入</div></a>
+
           </form>
-          <div class="d-flex justify-content-center mt-5">
+
+          <div class="btn border border-2 text-secondary w-100 mb-2 ">
+            <img src="../assets/images/icon_social_google.png" alt="icon_social_google" style="width: 18px;height: 18px;margin-right: 4px;">使用Google帳號登入</div>
+          <div class="btn border border-2 text-secondary w-100 mb-2 ">
+            <img src="../assets/images/icon_social_apple.png" alt="icon_social_google" style="width: 18px;height: 18px;margin-right: 4px;">使用Apple帳號登入</div>
+          <div class="btn border border-2 text-secondary w-100 mb-2 ">
+            <img src="../assets/images/icon_social_facebook.png" alt="icon_social_google" style="width: 18px;height: 18px;margin-right: 4px;">使用Facebook帳號登入</div>
+          <div class="d-flex justify-content-center mt-3">
             <a href="sign-up.html" style="color: #00B74F;text-decoration: none;"> &lt;尚未擁有帳號，立即加入會員&gt; </a>
           </div>
+
+          
         </div>
       </div>
     </div>
