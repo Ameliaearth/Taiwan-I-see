@@ -17,14 +17,15 @@
 <script src="../js/code.jquery.com_jquery-3.7.1.min.js"></script>
 <script src="../js/all.js"></script>
 
-  <script type="module" crossorigin src="/Taiwan-I-see/assets/main-8ae0c597.js"></script>
-  <link rel="stylesheet" href="/Taiwan-I-see/assets/main-f6b5e42f.css">
+  <script type="module" crossorigin src="/Taiwan-I-see/assets/main-8d119c26.js"></script>
+  <link rel="stylesheet" href="/Taiwan-I-see/assets/main-faec6368.css">
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg py-4" style="background-color: #333333;">
+<nav class="navbar navbar-expand-lg shadow fixed-top" style="background-color: #333333;border-bottom-right-radius: 40px;
+border-bottom-left-radius: 40px;">
 
-    <div class="container d-flex align-items-start">
+    <div class="container d-flex align-items-center">
         <div>
             <a class="navbar-brand" href="index-logged.html"></a>
         </div>
@@ -36,27 +37,27 @@
         </button>
 
         <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav text-center align-items-end">
+            <ul class="navbar-nav text-center align-items-end" >
                 
-              <li class="nav-item d-flex borderBtm mb-3 mb-lg-0">
+              <li class="nav-item me-lg-3 d-flex borderBtm mb-3 mb-lg-0">
                 <!-- 這個連結還沒好 -->
                 <a class="nav-link" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADFSURBVHgB1ZKBDYJADEV7TnAj3AiOwAhsICO4AYziBo4gG+gG5wa6QW3NN14I3FElRn7yw6W0j14L0b/LjQWZ2cujFgeEeudcT59IYDvxDT7BqigOFpbCGhR36PIVD+KjCaoAFHSZnGfHNBNY6zULORVG4adyNsl5K75QXlexh4vAey4RKr1/C9fh3NCxtEgGqA79PDYjbFqX1tBcJUUR3QS4xTJULVkEwCEBMM57/J926AAeBrHvoBMfWh+0oqW0KOwnegDdJgh2Qa4cRgAAAABJRU5ErkJggg==" alt="icon_search"></a>
                 <input class="searchArea fw-bold" id="filterInput" type="text" placeholder="找景點" aria-label="search">
               </li>
     
-              <li class="nav-item mb-3 mb-lg-0">
+              <li class="nav-item me-lg-3 mb-3 mb-lg-0">
                 <a class="nav-link fw-bold" href="attractions.html">景點內容</a>
               </li>
     
-              <li class="nav-item mb-3 mb-lg-0">
+              <li class="nav-item me-lg-3 mb-3 mb-lg-0">
                 <a class="nav-link fw-bold" href="collect.html">我的收藏</a>
               </li>
     
-              <li class="nav-item mb-3 mb-lg-0">
+              <li class="nav-item me-lg-3 mb-3 mb-lg-0">
                 <a class="nav-link fw-bold" href="record.html">歷史觀看紀錄</a>
               </li>
     
-              <li class="nav-item mb-3 mb-lg-0">
+              <li class="nav-item me-lg-3 mb-3 mb-lg-0">
                 <p class="nav-link fw-bold mb-0" href="#" style="color: #ffffff;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADUSURBVHgB5ZLhDYIwEIWvxAEYoRvABrqBbiCjOIIb4AayATABI6gT6Ab1XfISwZQKNeEPL/nSpr2+XO9OZHUyvwKccykWC1JjTCP/CGY5uLmPdJ9LrGhw1SyBBRfQSYxo4PoZ9c7s2Lsk4PnimvbO7Nfd7CxrfvsACu5LiRVrp3V7kpJdX06jc8hm7EAmw9q1oMJM3n3vEo+R1qrGVsfjyOOWPMAeaC07jZWQaKY6hWrF8TkztggZagMqmSjGD7q+8cRlM0ZjC5qQoV46mS6Nb2XdegNn5r0ZnVRZ0QAAAABJRU5ErkJggg==" alt="">您好，王小明</p>
               </li>
     
@@ -75,22 +76,32 @@
 
     </div>
   </nav>
-<div class="tab_css container my-4">
-    <div class="flex justify-content-center">
+<div class="container mt-4">
+    <span class="h2 text-primary fw-bold border-bottom border-3 border-primary">景點內容</span>
+</div>
+
+<div class="box">
+    <img class="fix-box" src="/Taiwan-I-see/assets/leaves-1ad50849.png" alt="leaves">
+</div>
+
+<div id="tab-demo" class="tab_css container my-4">
+    
+    <div >
         <img class="mb-3" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHxSURBVHgBxVfNVcJAEJ5JeD5uYgVQAlQgJ0UuhA7oQKzAZwVCB1qBwYN4swXsIFYAHnyPi4wbwk92szNheZh8h7xk9tudLzOZ2Q1CHt57cyCoZewIC+hMLnRuMASiR+s6hHfQDUem2YM82JwniBy4AL6FnytgGjTYMVIRyILnr6z8HAEr4Y0Av7MmOmfp/jECPEkAzDMWQp7/e4wAKaQAX1kT8fybMLKZcXf3EtSgSnMoCkRj6L4O9xE4E9/29EBvnZK9ADnf/4EocbsFlS3AKzgFO7dblBSBCuwFzADxQefQvXVqvA8Qjg3upbq0GX6o+J+abZn0BQQOUlmiEtuZtDTbWzBSnfDWyvewD9dhaB0CDlUhJbZ9AAU+sw/IAsQuiJHFWOf59p1QFiB/lNk2jMTzmTYsC5DK0mUrRj78iRveidvhwuXgkkJSBcnBY6CPUE8t2mSmPUE6DbFzrgLWAvBZs/iqLK/CWXxb2SzQVAvoNU8ggAa6Hokbp8ZcG2PnawFJCopuw6myTASU1IbLE7A0I+BRHYpEPzRTgEVGIEo/2L/fadBWqj6sY4AT1dkCg6+41LbSfWxtS86G/D8jE7SKXOjwIzciTkCDnbE5TOoQjuOpfJ9GgL21Nhy4BwmQZiwO5mI+1z0C5uHC/QdWwx+9nJODXIKr+AAAAABJRU5ErkJggg==" alt="icon_mark">
         <h2 class="d-inline fw-bold me-3">篩選</h2>
     </div>
+
     <!--ALL-->
     <input id="tab1" type="radio" name="tab" checked="checked" />
     <label for="tab1"> ALL </label>
-    <div class="tab_content">
+    <div class="tab_content tab-inner-wrap">
 
         <div id="cardContainer" class="row">
         <!-- 北部 -->
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox01" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-故宮博物院.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/故宮博物院-1-2d265f93.jpg" height="260" alt="故宮博物院-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/故宮博物院-1-2d265f93.jpg" height="260" alt="故宮博物院-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">故宮博物院</h5>
                     <ul class="list-unstyled">
@@ -123,10 +134,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-范姜老屋群.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/范姜老屋群-1-015ebbec.jpg" height="260" alt="范姜老屋群-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/范姜老屋群-1-015ebbec.jpg" height="260" alt="范姜老屋群-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">范姜老屋群</h5>
                     <ul class="list-unstyled">
@@ -159,10 +170,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-大武崙砲臺.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/大武崙砲臺-1-29f3e3ae.PNG" height="260" alt="大武崙砲臺-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/大武崙砲臺-1-6eb4ad80.jpg" height="260" alt="大武崙砲臺-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">大武崙砲臺</h5>
                     <ul class="list-unstyled">
@@ -195,10 +206,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-野柳地質公園.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/野柳地質公園-1-f9d9d4f1.jpg" height="260" alt="野柳地質公園-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/野柳地質公園-1-f9d9d4f1.jpg" height="260" alt="野柳地質公園-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">野柳地質公園</h5>
                     <ul class="list-unstyled">
@@ -231,10 +242,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-桃園客家文化館.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/桃園客家文化館-1-f4df740d.jpg" height="260" alt="桃園客家文化館-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/桃園客家文化館-2-85be040f.jpg" height="260" alt="桃園客家文化館-2">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">桃園客家文化館</h5>
                     <ul class="list-unstyled">
@@ -267,10 +278,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-賽夏族矮靈祭.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/賽夏族矮靈祭-1-3a445537.jpg" height="260" alt="賽夏族矮靈祭-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/賽夏族矮靈祭-1-3a445537.jpg" height="260" alt="賽夏族矮靈祭-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">賽夏族矮靈祭</h5>
                     <ul class="list-unstyled">
@@ -303,10 +314,10 @@
                 </div>
             </div>
         <!-- 中部 -->
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-梧棲夜市.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/梧棲夜市-1-7edddaa6.jpg" height="260" alt="梧棲夜市-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/梧棲夜市-2-68c104a7.jpg" height="260" alt="梧棲夜市-2">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">梧棲夜市</h5>
                     <ul class="list-unstyled">
@@ -339,10 +350,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-車埕木業展示館.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/車埕木業展示館-1-e1f7141b.jpeg" height="260" alt="車埕木業展示館-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/車埕木業展示館-1-e1f7141b.jpeg" height="260" alt="車埕木業展示館-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">車埕木業展示館</h5>
                     <ul class="list-unstyled">
@@ -375,10 +386,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-羅娜部落.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/羅娜部落-1-dce69be8.jpeg" height="260" alt="羅娜部落-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/羅娜部落-1-dce69be8.jpeg" height="260" alt="羅娜部落-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">羅娜部落</h5>
                     <ul class="list-unstyled">
@@ -411,10 +422,11 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+
+            <div id="tabox02" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-清水鬼洞.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/清水鬼洞-1-a2c35082.jpeg" height="260" alt="清水鬼洞-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/清水鬼洞-2-cb318446.jpeg" height="260" alt="清水鬼洞-2">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">清水鬼洞</h5>
                     <ul class="list-unstyled">
@@ -447,10 +459,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-路思義教堂.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/路思義教堂-1-7b2d3960.jpeg" height="260" alt="路思義教堂-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/路思義教堂-3-9803fb89.jpeg" height="260" alt="路思義教堂-3">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">路思義教堂</h5>
                     <ul class="list-unstyled">
@@ -483,10 +495,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-廣盛老街.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/廣盛老街-1-8bf14107.jpeg" height="260" alt="廣盛老街-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/廣盛老街-5-a02f9644.jpg" height="260" alt="廣盛老街-5">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">廣盛老街</h5>
                     <ul class="list-unstyled">
@@ -519,10 +531,10 @@
                 </div>
             </div>
         <!--南部-->
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox02" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-梅山太平老街.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/梅山太平老街-1-498df1b6.jpeg" height="260" alt="梅山太平老街-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/梅山太平老街-4-8dd4c6e3.jpg" height="260" alt="梅山太平老街-4">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">梅山太平老街</h5>
                     <ul class="list-unstyled">
@@ -555,10 +567,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox02" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-國立科學工藝博物館.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/國立科學工藝博物館-1-c5c5b2b1.jpg" height="260" alt="國立科學工藝博物館-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/國立科學工藝博物館-1-c5c5b2b1.jpg" height="260" alt="國立科學工藝博物館-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">國立科學工藝博物館</h5>
                     <ul class="list-unstyled">
@@ -591,10 +603,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox02" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-屏東客家文化園區.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/屏東客家文化園區-1-89ba7175.jpg" height="260" alt="屏東客家文化園區-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/屏東客家文化園區-2-43ad01aa.jpg" height="260" alt="屏東客家文化園區-2">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">屏東客家文化園區</h5>
                     <ul class="list-unstyled">
@@ -627,10 +639,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox02" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-涼山遊憩區.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/涼山遊憩區-1-72fda4e6.jpg" height="260" alt="涼山遊憩區-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/涼山遊憩區-1-72fda4e6.jpg" height="260" alt="涼山遊憩區-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">涼山遊憩區</h5>
                     <ul class="list-unstyled">
@@ -663,10 +675,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox02" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-三地門.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/三地門-1-c9ac6106.jpg" height="260" alt="三地門-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/三地門-1-c9ac6106.jpg" height="260" alt="三地門-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">三地門</h5>
                     <ul class="list-unstyled">
@@ -699,10 +711,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox02" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-昭和J18.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/昭和J18-1-c9cb9941.jpg" height="260" alt="昭和J18-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/昭和J18-1-c9cb9941.jpg" height="260" alt="昭和J18-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">昭和J18</h5>
                     <ul class="list-unstyled">
@@ -735,10 +747,10 @@
                 </div>
             </div>
         <!--東部-->
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox03" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-寶桑老街.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/寶桑老街-1-df7c93a9.jpg" height="260" alt="寶桑老街-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/寶桑老街-1-df7c93a9.jpg" height="260" alt="寶桑老街-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">寶桑老街</h5>
                     <ul class="list-unstyled">
@@ -771,10 +783,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox03" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-光隆博物館.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/光隆博物館-1-6e25449f.png" height="260" alt="光隆博物館-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/光隆博物館-1-6e25449f.png" height="260" alt="光隆博物館-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">光隆博物館</h5>
                     <ul class="list-unstyled">
@@ -807,10 +819,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox03" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-達魯瑪克部落.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/達魯瑪克部落-1-1d7c7f32.jpg" height="260" alt="達魯瑪克部落-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/達魯瑪克部落-2-d979c295.jpg" height="260" alt="達魯瑪克部落-2">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">達魯瑪克部落</h5>
                     <ul class="list-unstyled">
@@ -843,10 +855,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox03" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-東大門夜市.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/東大門夜市-1-cbc0085a.jpg" height="260" alt="東大門夜市-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/東大門夜市-5-97078936.jpg" height="260" alt="東大門夜市-5">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">東大門夜市</h5>
                     <ul class="list-unstyled">
@@ -879,10 +891,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox03" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-四八坑道.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/四八坑道-1-b4629e78.jpg" height="260" alt="四八坑道-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/四八坑道-5-d284cf6b.jpg" height="260" alt="四八坑道-5">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">四八坑道</h5>
                     <ul class="list-unstyled">
@@ -907,7 +919,7 @@
         <span class="align-top text-danger rounded-circle bg-success text-white material-symbols-outlined">chevron_right</span>
     </a>
 </div>                        <div class="inner">
-                            <a class="text-dark text-decoration-none" href="#">6380人收藏
+                            <a class="text-dark text-decoration-none mt-auto" href="#">6380人收藏
                                 <span class="align-top text-danger material-symbols-outlined">favorite</span>
                             </a>
                         </div>
@@ -915,10 +927,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox03" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-池上客家文化園區.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/池上客家文化園區-1-1eef906e.jpg" height="260" alt="池上客家文化園區-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/池上客家文化園區-1-1eef906e.jpg" height="260" alt="池上客家文化園區-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">池上客家文化園區</h5>
                     <ul class="list-unstyled">
@@ -951,10 +963,10 @@
                 </div>
             </div>
         <!--離島-->
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox03" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-金門歷史民俗博物館.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/金門歷史民俗博物館-1-c81d369d.jpeg" height="260" alt="金門歷史民俗博物館-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/金門歷史民俗博物館-2-103aa19a.jpeg" height="260" alt="金門歷史民俗博物館-2">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">金門歷史民俗博物館</h5>
                     <ul class="list-unstyled">
@@ -987,10 +999,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox04" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-蘭嶼.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/蘭嶼-1-ab56b630.jpeg" height="260" alt="蘭嶼-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/蘭嶼-1-ab56b630.jpeg" height="260" alt="蘭嶼-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">蘭嶼</h5>
                     <ul class="list-unstyled">
@@ -1023,10 +1035,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox04" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-芹壁村.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/芹壁村-1-79b49b50.jpeg" height="260" alt="芹壁村-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/芹壁村-1-79b49b50.jpeg" height="260" alt="芹壁村-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">芹壁村</h5>
                     <ul class="list-unstyled">
@@ -1059,10 +1071,10 @@
                 </div>
             </div>
             <!-- 特色夜市 -->
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox04" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-梧棲夜市.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/梧棲夜市-1-7edddaa6.jpg" height="260" alt="梧棲夜市-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/梧棲夜市-2-68c104a7.jpg" height="260" alt="梧棲夜市-2">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">梧棲夜市</h5>
                     <ul class="list-unstyled">
@@ -1098,10 +1110,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox04" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-東大門夜市.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/東大門夜市-1-cbc0085a.jpg" height="260" alt="東大門夜市-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/東大門夜市-5-97078936.jpg" height="260" alt="東大門夜市-5">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">東大門夜市</h5>
                     <ul class="list-unstyled">
@@ -1137,10 +1149,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox04" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-北甲宮夜市.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/北甲宮夜市-1-50fd212e.jpeg" height="260" alt="北甲宮夜市-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/北甲宮夜市-3-fecd9aa6.jpeg" height="260" alt="北甲宮夜市-3">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">北甲宮夜市</h5>
                     <ul class="list-unstyled">
@@ -1176,10 +1188,10 @@
                 </div>
             </div>
         <!-- 特色夜市 -->
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox04" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-廣盛老街.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/廣盛老街-1-8bf14107.jpeg" height="260" alt="廣盛老街-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/廣盛老街-5-a02f9644.jpg" height="260" alt="廣盛老街-5">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">廣盛老街</h5>
                     <ul class="list-unstyled">
@@ -1215,10 +1227,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox04" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-梅山太平老街.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/梅山太平老街-1-498df1b6.jpeg" height="260" alt="梅山太平老街-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/梅山太平老街-4-8dd4c6e3.jpg" height="260" alt="梅山太平老街-4">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">梅山太平老街</h5>
                     <ul class="list-unstyled">
@@ -1254,10 +1266,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox04" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-寶桑老街.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/寶桑老街-1-df7c93a9.jpg" height="260" alt="寶桑老街-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/寶桑老街-1-df7c93a9.jpg" height="260" alt="寶桑老街-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">寶桑老街</h5>
                     <ul class="list-unstyled">
@@ -1293,10 +1305,10 @@
                 </div>
             </div>
         <!-- 古蹟巡禮 -->
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox04" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-范姜老屋群.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/范姜老屋群-1-015ebbec.jpg" height="260" alt="范姜老屋群-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/范姜老屋群-1-015ebbec.jpg" height="260" alt="范姜老屋群-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">范姜老屋群</h5>
                     <ul class="list-unstyled">
@@ -1332,10 +1344,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox04" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-昭和J18.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/昭和J18-1-c9cb9941.jpg" height="260" alt="昭和J18-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/昭和J18-1-c9cb9941.jpg" height="260" alt="昭和J18-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">昭和J18</h5>
                     <ul class="list-unstyled">
@@ -1371,10 +1383,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox04" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-路思義教堂.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/路思義教堂-1-7b2d3960.jpeg" height="260" alt="路思義教堂-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/路思義教堂-3-9803fb89.jpeg" height="260" alt="路思義教堂-3">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">路思義教堂</h5>
                     <ul class="list-unstyled">
@@ -1410,10 +1422,10 @@
                 </div>
             </div>
         <!-- 博物館 -->
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox04" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-車埕木業展示館.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/車埕木業展示館-1-e1f7141b.jpeg" height="260" alt="車埕木業展示館-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/車埕木業展示館-1-e1f7141b.jpeg" height="260" alt="車埕木業展示館-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">車埕木業展示館</h5>
                     <ul class="list-unstyled">
@@ -1449,10 +1461,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox04" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-國立科學工藝博物館.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/國立科學工藝博物館-1-c5c5b2b1.jpg" height="260" alt="國立科學工藝博物館-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/國立科學工藝博物館-1-c5c5b2b1.jpg" height="260" alt="國立科學工藝博物館-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">國立科學工藝博物館</h5>
                     <ul class="list-unstyled">
@@ -1488,10 +1500,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox04" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-光隆博物館.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/光隆博物館-1-6e25449f.png" height="260" alt="光隆博物館-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/光隆博物館-1-6e25449f.png" height="260" alt="光隆博物館-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">光隆博物館</h5>
                     <ul class="list-unstyled">
@@ -1527,10 +1539,10 @@
                 </div>
             </div>
         <!-- 戰地文化 -->
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox05" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-清水鬼洞.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/清水鬼洞-1-a2c35082.jpeg" height="260" alt="清水鬼洞-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/清水鬼洞-2-cb318446.jpeg" height="260" alt="清水鬼洞-2">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">清水鬼洞</h5>
                     <ul class="list-unstyled">
@@ -1566,10 +1578,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox05" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-四八坑道.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/四八坑道-1-b4629e78.jpg" height="260" alt="四八坑道-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/四八坑道-5-d284cf6b.jpg" height="260" alt="四八坑道-5">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">四八坑道</h5>
                     <ul class="list-unstyled">
@@ -1605,10 +1617,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox05" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-大武崙砲臺.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/大武崙砲臺-1-29f3e3ae.PNG" height="260" alt="大武崙砲臺-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/大武崙砲臺-1-6eb4ad80.jpg" height="260" alt="大武崙砲臺-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">大武崙砲臺</h5>
                     <ul class="list-unstyled">
@@ -1644,10 +1656,10 @@
                 </div>
             </div>
         <!-- 原住民文化 -->
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox05" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-羅娜部落.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/羅娜部落-1-dce69be8.jpeg" height="260" alt="羅娜部落-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/羅娜部落-1-dce69be8.jpeg" height="260" alt="羅娜部落-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">羅娜部落</h5>
                     <ul class="list-unstyled">
@@ -1683,10 +1695,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox05" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-三地門.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/三地門-1-c9ac6106.jpg" height="260" alt="三地門-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/三地門-1-c9ac6106.jpg" height="260" alt="三地門-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">三地門</h5>
                     <ul class="list-unstyled">
@@ -1722,10 +1734,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox05" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-賽夏族矮靈祭.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/賽夏族矮靈祭-1-3a445537.jpg" height="260" alt="賽夏族矮靈祭-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/賽夏族矮靈祭-1-3a445537.jpg" height="260" alt="賽夏族矮靈祭-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">賽夏族矮靈祭</h5>
                     <ul class="list-unstyled">
@@ -1761,10 +1773,10 @@
                 </div>
             </div>
         <!-- 客家文化 -->
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox05" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-桃園客家文化館.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/桃園客家文化館-1-f4df740d.jpg" height="260" alt="桃園客家文化館-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/桃園客家文化館-2-85be040f.jpg" height="260" alt="桃園客家文化館-2">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">桃園客家文化館</h5>
                     <ul class="list-unstyled">
@@ -1800,10 +1812,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox05" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-東勢客家文化園區.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/東勢客家文化園區-1-756bccf1.jpeg" height="260" alt="東勢客家文化園區-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/東勢客家文化園區-1-756bccf1.jpeg" height="260" alt="東勢客家文化園區-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">東勢客家文化園區</h5>
                     <ul class="list-unstyled">
@@ -1839,10 +1851,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox05" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-池上客家文化園區.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/池上客家文化園區-1-1eef906e.jpg" height="260" alt="池上客家文化園區-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/池上客家文化園區-1-1eef906e.jpg" height="260" alt="池上客家文化園區-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">池上客家文化園區</h5>
                     <ul class="list-unstyled">
@@ -1878,10 +1890,10 @@
                 </div>
             </div>
         <!-- 山明水秀 -->
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox05" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-椬梧滯洪池.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/椬梧滯洪池-1-3d0bafd2.jpeg" height="260" alt="椬梧滯洪池-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/椬梧滯洪池-4-56138724.jpg" height="260" alt="椬梧滯洪池-4">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">椬梧滯洪池</h5>
                     <ul class="list-unstyled">
@@ -1917,10 +1929,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox05" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-野柳地質公園.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/野柳地質公園-1-f9d9d4f1.jpg" height="260" alt="野柳地質公園-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/野柳地質公園-1-f9d9d4f1.jpg" height="260" alt="野柳地質公園-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">野柳地質公園</h5>
                     <ul class="list-unstyled">
@@ -1956,10 +1968,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div id="tabox05" class="tab-inner col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-芹壁村.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/芹壁村-1-79b49b50.jpeg" height="260" alt="芹壁村-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/芹壁村-1-79b49b50.jpeg" height="260" alt="芹壁村-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">芹壁村</h5>
                     <ul class="list-unstyled">
@@ -2006,10 +2018,10 @@
     <div class="tab_content">
 
         <div id="cardContainer" class="row">
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-故宮博物院.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/故宮博物院-1-2d265f93.jpg" height="260" alt="故宮博物院-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/故宮博物院-1-2d265f93.jpg" height="260" alt="故宮博物院-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">故宮博物院</h5>
                     <ul class="list-unstyled">
@@ -2042,10 +2054,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-范姜老屋群.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/范姜老屋群-1-015ebbec.jpg" height="260" alt="范姜老屋群-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/范姜老屋群-1-015ebbec.jpg" height="260" alt="范姜老屋群-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">范姜老屋群</h5>
                     <ul class="list-unstyled">
@@ -2078,10 +2090,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-大武崙砲臺.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/大武崙砲臺-1-29f3e3ae.PNG" height="260" alt="大武崙砲臺-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/大武崙砲臺-1-29f3e3ae.PNG" height="260" alt="大武崙砲臺-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">大武崙砲臺</h5>
                     <ul class="list-unstyled">
@@ -2114,10 +2126,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-野柳地質公園.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/野柳地質公園-1-f9d9d4f1.jpg" height="260" alt="野柳地質公園-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/野柳地質公園-1-f9d9d4f1.jpg" height="260" alt="野柳地質公園-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">野柳地質公園</h5>
                     <ul class="list-unstyled">
@@ -2150,10 +2162,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-桃園客家文化館.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/桃園客家文化館-1-f4df740d.jpg" height="260" alt="桃園客家文化館-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/桃園客家文化館-2-85be040f.jpg" height="260" alt="桃園客家文化館-2">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">桃園客家文化館</h5>
                     <ul class="list-unstyled">
@@ -2186,10 +2198,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-賽夏族矮靈祭.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/賽夏族矮靈祭-1-3a445537.jpg" height="260" alt="賽夏族矮靈祭-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/賽夏族矮靈祭-1-3a445537.jpg" height="260" alt="賽夏族矮靈祭-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">賽夏族矮靈祭</h5>
                     <ul class="list-unstyled">
@@ -2230,10 +2242,10 @@
     <div class="tab_content">
 
         <div id="cardContainer" class="row">
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-梧棲夜市.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/梧棲夜市-1-7edddaa6.jpg" height="260" alt="梧棲夜市-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/梧棲夜市-2-68c104a7.jpg" height="260" alt="梧棲夜市-2">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">梧棲夜市</h5>
                     <ul class="list-unstyled">
@@ -2266,10 +2278,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-車埕木業展示館.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/車埕木業展示館-1-e1f7141b.jpeg" height="260" alt="車埕木業展示館-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/車埕木業展示館-1-e1f7141b.jpeg" height="260" alt="車埕木業展示館-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">車埕木業展示館</h5>
                     <ul class="list-unstyled">
@@ -2302,10 +2314,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-羅娜部落.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/羅娜部落-1-dce69be8.jpeg" height="260" alt="羅娜部落-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/羅娜部落-1-dce69be8.jpeg" height="260" alt="羅娜部落-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">羅娜部落</h5>
                     <ul class="list-unstyled">
@@ -2338,10 +2350,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-清水鬼洞.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/清水鬼洞-1-a2c35082.jpeg" height="260" alt="清水鬼洞-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/清水鬼洞-2-cb318446.jpeg" height="260" alt="清水鬼洞-2">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">清水鬼洞</h5>
                     <ul class="list-unstyled">
@@ -2374,10 +2386,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-路思義教堂.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/路思義教堂-1-7b2d3960.jpeg" height="260" alt="路思義教堂-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/路思義教堂-3-9803fb89.jpeg" height="260" alt="路思義教堂-3">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">路思義教堂</h5>
                     <ul class="list-unstyled">
@@ -2410,10 +2422,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-廣盛老街.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/廣盛老街-1-8bf14107.jpeg" height="260" alt="廣盛老街-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/廣盛老街-5-a02f9644.jpg" height="260" alt="廣盛老街-5">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">廣盛老街</h5>
                     <ul class="list-unstyled">
@@ -2454,10 +2466,10 @@
     <div class="tab_content">
 
         <div id="cardContainer" class="row">
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-梅山太平老街.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/梅山太平老街-1-498df1b6.jpeg" height="260" alt="梅山太平老街-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/梅山太平老街-4-8dd4c6e3.jpg" height="260" alt="梅山太平老街-4">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">梅山太平老街</h5>
                     <ul class="list-unstyled">
@@ -2490,10 +2502,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-國立科學工藝博物館.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/國立科學工藝博物館-1-c5c5b2b1.jpg" height="260" alt="國立科學工藝博物館-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/國立科學工藝博物館-1-c5c5b2b1.jpg" height="260" alt="國立科學工藝博物館-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">國立科學工藝博物館</h5>
                     <ul class="list-unstyled">
@@ -2526,10 +2538,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-屏東客家文化園區.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/屏東客家文化園區-1-89ba7175.jpg" height="260" alt="屏東客家文化園區-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/屏東客家文化園區-1-89ba7175.jpg" height="260" alt="屏東客家文化園區-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">屏東客家文化園區</h5>
                     <ul class="list-unstyled">
@@ -2562,10 +2574,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-涼山遊憩區.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/涼山遊憩區-1-72fda4e6.jpg" height="260" alt="涼山遊憩區-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/涼山遊憩區-1-72fda4e6.jpg" height="260" alt="涼山遊憩區-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">涼山遊憩區</h5>
                     <ul class="list-unstyled">
@@ -2598,10 +2610,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-三地門.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/三地門-1-c9ac6106.jpg" height="260" alt="三地門-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/三地門-1-c9ac6106.jpg" height="260" alt="三地門-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">三地門</h5>
                     <ul class="list-unstyled">
@@ -2634,10 +2646,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-昭和J18.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/昭和J18-1-c9cb9941.jpg" height="260" alt="昭和J18-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/昭和J18-1-c9cb9941.jpg" height="260" alt="昭和J18-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">昭和J18</h5>
                     <ul class="list-unstyled">
@@ -2678,10 +2690,10 @@
     <div class="tab_content">
 
         <div id="cardContainer" class="row">
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-寶桑老街.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/寶桑老街-1-df7c93a9.jpg" height="260" alt="寶桑老街-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/寶桑老街-1-df7c93a9.jpg" height="260" alt="寶桑老街-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">寶桑老街</h5>
                     <ul class="list-unstyled">
@@ -2714,10 +2726,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-光隆博物館.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/光隆博物館-1-6e25449f.png" height="260" alt="光隆博物館-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/光隆博物館-1-6e25449f.png" height="260" alt="光隆博物館-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">光隆博物館</h5>
                     <ul class="list-unstyled">
@@ -2750,10 +2762,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-達魯瑪克部落.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/達魯瑪克部落-1-1d7c7f32.jpg" height="260" alt="達魯瑪克部落-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/達魯瑪克部落-3-32516f21.jpg" height="260" alt="達魯瑪克部落-3">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">達魯瑪克部落</h5>
                     <ul class="list-unstyled">
@@ -2786,10 +2798,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-東大門夜市.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/東大門夜市-1-cbc0085a.jpg" height="260" alt="東大門夜市-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/東大門夜市-5-97078936.jpg" height="260" alt="東大門夜市-5">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">東大門夜市</h5>
                     <ul class="list-unstyled">
@@ -2822,10 +2834,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-四八坑道.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/四八坑道-1-b4629e78.jpg" height="260" alt="四八坑道-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/四八坑道-5-d284cf6b.jpg" height="260" alt="四八坑道-5">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">四八坑道</h5>
                     <ul class="list-unstyled">
@@ -2858,10 +2870,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-池上客家文化園區.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/池上客家文化園區-1-1eef906e.jpg" height="260" alt="池上客家文化園區-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/池上客家文化園區-1-1eef906e.jpg" height="260" alt="池上客家文化園區-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">池上客家文化園區</h5>
                     <ul class="list-unstyled">
@@ -2902,10 +2914,10 @@
     <div class="tab_content">
 
         <div id="cardContainer" class="row">
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-金門歷史民俗博物館.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/金門歷史民俗博物館-1-c81d369d.jpeg" height="260" alt="金門歷史民俗博物館-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/金門歷史民俗博物館-2-103aa19a.jpeg" height="260" alt="金門歷史民俗博物館-2">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">金門歷史民俗博物館</h5>
                     <ul class="list-unstyled">
@@ -2938,10 +2950,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-蘭嶼.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/蘭嶼-1-ab56b630.jpeg" height="260" alt="蘭嶼-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/蘭嶼-1-ab56b630.jpeg" height="260" alt="蘭嶼-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">蘭嶼</h5>
                     <ul class="list-unstyled">
@@ -2974,10 +2986,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-芹壁村.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/芹壁村-1-79b49b50.jpeg" height="260" alt="芹壁村-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/芹壁村-1-79b49b50.jpeg" height="260" alt="芹壁村-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">芹壁村</h5>
                     <ul class="list-unstyled">
@@ -3010,10 +3022,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-北甲宮夜市.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/北甲宮夜市-1-50fd212e.jpeg" height="260" alt="北甲宮夜市-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/北甲宮夜市-3-fecd9aa6.jpeg" height="260" alt="北甲宮夜市-3">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">北甲宮夜市</h5>
                     <ul class="list-unstyled">
@@ -3046,10 +3058,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-中央老街.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/中央老街-1-fdfb95bc.jpg" height="260" alt="中央老街-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/中央老街-1-fdfb95bc.jpg" height="260" alt="中央老街-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">中央老街</h5>
                     <ul class="list-unstyled">
@@ -3082,10 +3094,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-文臺寶塔.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/文臺寶塔-1-5cf60c0b.jpeg" height="260" alt="文臺寶塔-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/文臺寶塔-1-5cf60c0b.jpeg" height="260" alt="文臺寶塔-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">文臺寶塔</h5>
                     <ul class="list-unstyled">
@@ -3125,10 +3137,10 @@
     <div class="tab_content">
 
         <div id="cardContainer" class="row">
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-梧棲夜市.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/梧棲夜市-1-7edddaa6.jpg" height="260" alt="梧棲夜市-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/梧棲夜市-2-68c104a7.jpg" height="260" alt="梧棲夜市-2">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">梧棲夜市</h5>
                     <ul class="list-unstyled">
@@ -3161,10 +3173,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-東大門夜市.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/東大門夜市-1-cbc0085a.jpg" height="260" alt="東大門夜市-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/東大門夜市-5-97078936.jpg" height="260" alt="東大門夜市-5">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">東大門夜市</h5>
                     <ul class="list-unstyled">
@@ -3197,10 +3209,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-北甲宮夜市.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/北甲宮夜市-1-50fd212e.jpeg" height="260" alt="北甲宮夜市-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/北甲宮夜市-3-fecd9aa6.jpeg" height="260" alt="北甲宮夜市-3">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">北甲宮夜市</h5>
                     <ul class="list-unstyled">
@@ -3241,10 +3253,10 @@
     <div class="tab_content">
 
         <div id="cardContainer" class="row">
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-廣盛老街.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/廣盛老街-1-8bf14107.jpeg" height="260" alt="廣盛老街-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/廣盛老街-5-a02f9644.jpg" height="260" alt="廣盛老街-5">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">廣盛老街</h5>
                     <ul class="list-unstyled">
@@ -3277,10 +3289,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-梅山太平老街.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/梅山太平老街-1-498df1b6.jpeg" height="260" alt="梅山太平老街-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/梅山太平老街-4-8dd4c6e3.jpg" height="260" alt="梅山太平老街-4">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">梅山太平老街</h5>
                     <ul class="list-unstyled">
@@ -3313,10 +3325,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-寶桑老街.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/寶桑老街-1-df7c93a9.jpg" height="260" alt="寶桑老街-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/寶桑老街-1-df7c93a9.jpg" height="260" alt="寶桑老街-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">寶桑老街</h5>
                     <ul class="list-unstyled">
@@ -3357,10 +3369,10 @@
     <div class="tab_content">
 
         <div id="cardContainer" class="row">
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-范姜老屋群.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/范姜老屋群-1-015ebbec.jpg" height="260" alt="范姜老屋群-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/范姜老屋群-1-015ebbec.jpg" height="260" alt="范姜老屋群-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">范姜老屋群</h5>
                     <ul class="list-unstyled">
@@ -3393,10 +3405,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-昭和J18.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/昭和J18-1-c9cb9941.jpg" height="260" alt="昭和J18-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/昭和J18-1-c9cb9941.jpg" height="260" alt="昭和J18-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">昭和J18</h5>
                     <ul class="list-unstyled">
@@ -3429,10 +3441,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-路思義教堂.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/路思義教堂-1-7b2d3960.jpeg" height="260" alt="路思義教堂-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/路思義教堂-3-9803fb89.jpeg" height="260" alt="路思義教堂-3">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">路思義教堂</h5>
                     <ul class="list-unstyled">
@@ -3473,10 +3485,10 @@
     <div class="tab_content">
 
         <div id="cardContainer" class="row">
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-車埕木業展示館.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/車埕木業展示館-1-e1f7141b.jpeg" height="260" alt="車埕木業展示館-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/車埕木業展示館-1-e1f7141b.jpeg" height="260" alt="車埕木業展示館-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">車埕木業展示館</h5>
                     <ul class="list-unstyled">
@@ -3509,10 +3521,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-國立科學工藝博物館.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/國立科學工藝博物館-1-c5c5b2b1.jpg" height="260" alt="國立科學工藝博物館-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/國立科學工藝博物館-1-c5c5b2b1.jpg" height="260" alt="國立科學工藝博物館-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">國立科學工藝博物館</h5>
                     <ul class="list-unstyled">
@@ -3545,10 +3557,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-光隆博物館.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/光隆博物館-1-6e25449f.png" height="260" alt="光隆博物館-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/光隆博物館-1-6e25449f.png" height="260" alt="光隆博物館-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">光隆博物館</h5>
                     <ul class="list-unstyled">
@@ -3589,10 +3601,10 @@
     <div class="tab_content">
 
         <div id="cardContainer" class="row">
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-清水鬼洞.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/清水鬼洞-1-a2c35082.jpeg" height="260" alt="清水鬼洞-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/清水鬼洞-2-cb318446.jpeg" height="260" alt="清水鬼洞-2">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">清水鬼洞</h5>
                     <ul class="list-unstyled">
@@ -3625,10 +3637,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-四八坑道.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/四八坑道-1-b4629e78.jpg" height="260" alt="四八坑道-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/四八坑道-5-d284cf6b.jpg" height="260" alt="四八坑道-5">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">四八坑道</h5>
                     <ul class="list-unstyled">
@@ -3661,10 +3673,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-大武崙砲臺.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/大武崙砲臺-1-29f3e3ae.PNG" height="260" alt="大武崙砲臺-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/大武崙砲臺-1-29f3e3ae.PNG" height="260" alt="大武崙砲臺-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">大武崙砲臺</h5>
                     <ul class="list-unstyled">
@@ -3705,10 +3717,10 @@
     <div class="tab_content">
 
         <div id="cardContainer" class="row">
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-羅娜部落.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/羅娜部落-1-dce69be8.jpeg" height="260" alt="羅娜部落-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/羅娜部落-1-dce69be8.jpeg" height="260" alt="羅娜部落-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">羅娜部落</h5>
                     <ul class="list-unstyled">
@@ -3741,10 +3753,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-三地門.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/三地門-1-c9ac6106.jpg" height="260" alt="三地門-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/三地門-1-c9ac6106.jpg" height="260" alt="三地門-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">三地門</h5>
                     <ul class="list-unstyled">
@@ -3777,10 +3789,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-賽夏族矮靈祭.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/賽夏族矮靈祭-1-3a445537.jpg" height="260" alt="賽夏族矮靈祭-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/賽夏族矮靈祭-1-3a445537.jpg" height="260" alt="賽夏族矮靈祭-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">賽夏族矮靈祭</h5>
                     <ul class="list-unstyled">
@@ -3821,10 +3833,10 @@
     <div class="tab_content">
 
         <div id="cardContainer" class="row">
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-桃園客家文化館.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/桃園客家文化館-1-f4df740d.jpg" height="260" alt="桃園客家文化館-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/桃園客家文化館-1-f4df740d.jpg" height="260" alt="桃園客家文化館-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">桃園客家文化館</h5>
                     <ul class="list-unstyled">
@@ -3857,10 +3869,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-東勢客家文化園區.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/東勢客家文化園區-1-756bccf1.jpeg" height="260" alt="東勢客家文化園區-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/東勢客家文化園區-1-756bccf1.jpeg" height="260" alt="東勢客家文化園區-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">東勢客家文化園區</h5>
                     <ul class="list-unstyled">
@@ -3893,10 +3905,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-池上客家文化園區.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/池上客家文化園區-1-1eef906e.jpg" height="260" alt="池上客家文化園區-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/池上客家文化園區-1-1eef906e.jpg" height="260" alt="池上客家文化園區-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">池上客家文化園區</h5>
                     <ul class="list-unstyled">
@@ -3937,10 +3949,10 @@
     <div class="tab_content">
 
         <div id="cardContainer" class="row">
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-椬梧滯洪池.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/椬梧滯洪池-1-3d0bafd2.jpeg" height="260" alt="椬梧滯洪池-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="../assets/images/椬梧滯洪池-4.jpeg" height="260" alt="椬梧滯洪池-4">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">椬梧滯洪池</h5>
                     <ul class="list-unstyled">
@@ -3973,10 +3985,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-野柳地質公園.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/野柳地質公園-1-f9d9d4f1.jpg" height="260" alt="野柳地質公園-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/野柳地質公園-1-f9d9d4f1.jpg" height="260" alt="野柳地質公園-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">野柳地質公園</h5>
                     <ul class="list-unstyled">
@@ -4009,10 +4021,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 px-3 jq-card">
+            <div class="col-md-6 col-lg-4 px-3 jq-card">
                 <div class="shadow mb-5 bor-rad-24 bg-white px-3 py-3">
                     <a target="_blank" href="in attractions-芹壁村.html">
-                        <img class="bor-rad-24 mx-auto w-100 d-block" src="/Taiwan-I-see/assets/芹壁村-1-79b49b50.jpeg" height="260" alt="芹壁村-1">
+                        <img class="bor-rad-24 img-thumbnail mx-auto w-100 d-block" src="/Taiwan-I-see/assets/芹壁村-1-79b49b50.jpeg" height="260" alt="芹壁村-1">
                     </a>
                     <h5 class="text-center fw-bold py-3 text-success">芹壁村</h5>
                     <ul class="list-unstyled">
@@ -4050,12 +4062,13 @@
 
 <!-- 頁數 -->
 <div class="btn-toolbar justify-content-center my-3" role="toolbar" aria-label="Toolbar with button groups">
-    <div class="btn-group" role="group" aria-label="First group">
-        <button type="button" class="btn btn-outline-secondary">1</button>
-        <button type="button" class="btn btn-outline-secondary">2</button>
-        <button type="button" class="btn btn-outline-secondary">3</button>
-        <button type="button" class="btn btn-outline-secondary">4</button>
-    </div>
+    <ul class="list-unstyled btn-group tab-title" role="group" aria-label="First group">
+        <li><a class="btn btn-outline-secondary" href="#tabox01">1</a></li>
+        <li><a class="btn btn-outline-secondary" href="#tabox02">2</a></li>
+        <li><a class="btn btn-outline-secondary" href="#tabox03">3</a></li>
+        <li><a class="btn btn-outline-secondary" href="#tabox04">4</a></li>
+        <li><a class="btn btn-outline-secondary" href="#tabox05">5</a></li>
+    </ul>
 </div>
 
 
