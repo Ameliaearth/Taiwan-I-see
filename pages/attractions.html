@@ -22,15 +22,21 @@
 <body>
 <%- include('./layout/header-logged'); -%>
 
+<div class="container mt-4">
+    <span class="h2 text-primary fw-bold border-bottom border-3 border-primary">景點內容</span>
+</div>
+
 <div class="box">
     <img class="fix-box" src="../assets/images/leaves.png" alt="leaves">
 </div>
 
 <div id="tab-demo" class="tab_css container my-4">
-    <div class="flex justify-content-center">
+    
+    <div >
         <img class="mb-3" src="../assets/images/icon_mark.png" alt="icon_mark">
         <h2 class="d-inline fw-bold me-3">篩選</h2>
     </div>
+
     <!--ALL-->
     <input id="tab1" type="radio" name="tab" checked="checked" />
     <label for="tab1"> ALL </label>
