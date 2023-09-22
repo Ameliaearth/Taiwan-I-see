@@ -9,12 +9,12 @@
     'opsz' 20
 }
 .recommand-footer .my-3 svg {
-  width: 30px; /* 設定合適的寬度 */
-  height: 30px; /* 設定合適的高度 */
+  width: 30px; 
+  height: 30px; 
 }
 
 .recommand-footer .my-3 span {
-  font-size: 20px; /* 設定合適的字體大小 */
+  font-size: 20px; 
 }
 .container2 {
   width: 100%;
@@ -74,4 +74,18 @@
 .progressbar li.active + li:after {
   background-color: green;
 }
+.rounded-card {
+  border-radius: 40px; 
+  overflow: hidden; 
+}
+.progressbar {
+  display: flex;
+  justify-content: space-between; 
+  list-style: none; 
+  padding: 0; 
+}
 
+.progressbar li {
+  flex: 1; 
+  text-align: center; 
+}
