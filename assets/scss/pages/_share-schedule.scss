@@ -13,60 +13,10 @@
 }
 .container2 {
     width: 100%;
-  }
-  
-  .progressbar {
-    counter-reset: step;
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden; /* 隱藏水平溢出 */
-  }
-  
-  .progressbar li {
-    float: left;
-    width: 16.6667%; /* 100% / 6 個項目 = 16.6667% */
-    position: relative;
-    text-align: center;
-  }
-  
-  .progressbar li:before {
-    content: counter(step);
-    counter-increment: step;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    border: 1px solid #ddd;
-    display: block;
-    text-align: center;
-    margin: 0 auto 10px auto;
-    border-radius: 50%;
-    background-color: white;
-  }
-  
-  .progressbar li:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: #ddd;
-    top: 15px;
-    left: -50%;
-    z-index: -1;
-  }
-  
-  .progressbar li:first-child:after {
-    content: none;
-  }
-  
-  .progressbar li.active {
-    color: green;
-  }
-  
-  .progressbar li.active:before {
-    border-color: green;
-  }
-  
-  .progressbar li.active + li:after {
-    background-color: green;
-  }
-  
+}  
+
+.shareimg {
+  height: 100%; /* 圖片高度百分比 */
+  width: 100%; /* 圖片寬度百分比 */
+  object-fit: cover; /* 圖片保持縱横比，覆蓋整個容器 */
+}
